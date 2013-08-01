@@ -1,0 +1,202 @@
+16:44:49 **** Incremental Build of configuration Release for project uart04 ****
+make all 
+Building file: ../_vectors.S
+Invoking: ARM Yagarto Windows GCC Assembler
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="_vectors.o.lst" -v -c -fmessage-length=0 -MMD -MP -MF"_vectors.d" -MT"_vectors.d" -mcpu=arm1176jzf-s -o "_vectors.o" "../_vectors.S"
+Using built-in specs.
+COLLECT_GCC=c:\yagarto-20121222\bin\arm-none-eabi-gcc.exe
+Target: arm-none-eabi
+Configured with: ../gcc-4.7.2/configure --target=arm-none-eabi --prefix=/home/yagarto/install --disable-shared --disable-nls --disable-threads --disable-libssp --disable-libstdcxx-pch --disable-libmudflap --disable-libgomp -v --enable-languages=c,c++ --enable-interwork --enable-multilib --with-gcc --with-gnu-ld --with-gnu-as --with-dwarf2 --with-newlib --with-headers=../newlib-1.20.0/newlib/libc/include --with-mpc=/home/yagarto/addontools --with-mpfr=/home/yagarto/addontools --with-gmp=/home/yagarto/addontools
+Thread model: single
+gcc version 4.7.2 (GCC) 
+COLLECT_GCC_OPTIONS='-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' '_vectors.d' '-MT' '_vectors.d' '-mcpu=arm1176jzf-s' '-o' '_vectors.o'
+ c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/cc1.exe -E -lang-asm -quiet -v -iprefix c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/ -MMD _vectors.d -MF _vectors.d -MP -MT _vectors.d -D__USES_INITFINI__ ../_vectors.S -mcpu=arm1176jzf-s -Wall -fmessage-length=0 -fno-directives-only -o C:\Temp\cclr69XG.s
+ignoring duplicate directory "c:/yagarto-20121222/lib/gcc/../../lib/gcc/arm-none-eabi/4.7.2/include"
+ignoring duplicate directory "c:/yagarto-20121222/lib/gcc/../../lib/gcc/arm-none-eabi/4.7.2/include-fixed"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/include
+ c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/include-fixed
+ c:/yagarto-20121222/lib/gcc/../../arm-none-eabi/sys-include
+ c:/yagarto-20121222/lib/gcc/../../arm-none-eabi/include
+End of search list.
+COLLECT_GCC_OPTIONS='-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' '_vectors.d' '-MT' '_vectors.d' '-mcpu=arm1176jzf-s' '-o' '_vectors.o'
+ c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/as.exe -v -mcpu=arm1176jzf-s -meabi=5 -adhlns=_vectors.o.lst -o _vectors.o C:\Temp\cclr69XG.s
+GNU assembler version 2.23.1 (arm-none-eabi) using BFD version (GNU Binutils) 2.23.1
+Finished building: ../_vectors.S
+COMPILER_PATH=c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../libexec/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/
+ 
+LIBRARY_PATH=c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../lib/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' '_vectors.d' '-MT' '_vectors.d' '-mcpu=arm1176jzf-s' '-o' '_vectors.o'
+Building file: ../uart04.c
+Invoking: ARM Yagarto Windows GCC C Compiler
+arm-none-eabi-gcc -O3 -Wall -Wa,-adhlns="uart04.o.lst" -v -c -fmessage-length=0 -MMD -MP -MF"uart04.d" -MT"uart04.d" -mcpu=arm1176jzf-s -o "uart04.o" "../uart04.c"
+Using built-in specs.
+COLLECT_GCC=c:\yagarto-20121222\bin\arm-none-eabi-gcc.exe
+Target: arm-none-eabi
+Configured with: ../gcc-4.7.2/configure --target=arm-none-eabi --prefix=/home/yagarto/install --disable-shared --disable-nls --disable-threads --disable-libssp --disable-libstdcxx-pch --disable-libmudflap --disable-libgomp -v --enable-languages=c,c++ --enable-interwork --enable-multilib --with-gcc --with-gnu-ld --with-gnu-as --with-dwarf2 --with-newlib --with-headers=../newlib-1.20.0/newlib/libc/include --with-mpc=/home/yagarto/addontools --with-mpfr=/home/yagarto/addontools --with-gmp=/home/yagarto/addontools
+Thread model: single
+gcc version 4.7.2 (GCC) 
+COLLECT_GCC_OPTIONS='-O3' '-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' 'uart04.d' '-MT' 'uart04.d' '-mcpu=arm1176jzf-s' '-o' 'uart04.o'
+ c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/cc1.exe -quiet -v -iprefix c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/ -MMD uart04.d -MF uart04.d -MP -MT uart04.d -D__USES_INITFINI__ ../uart04.c -quiet -dumpbase uart04.c -mcpu=arm1176jzf-s -auxbase-strip uart04.o -O3 -Wall -version -fmessage-length=0 -o C:\Temp\ccrceCYe.s
+GNU C (GCC) version 4.7.2 (arm-none-eabi)
+	compiled by GNU C version 3.4.5 (mingw-vista special r3), GMP version 5.0.4, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/yagarto-20121222/lib/gcc/../../lib/gcc/arm-none-eabi/4.7.2/include"
+ignoring duplicate directory "c:/yagarto-20121222/lib/gcc/../../lib/gcc/arm-none-eabi/4.7.2/include-fixed"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/include
+ c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/include-fixed
+ c:/yagarto-20121222/lib/gcc/../../arm-none-eabi/sys-include
+ c:/yagarto-20121222/lib/gcc/../../arm-none-eabi/include
+End of search list.
+GNU C (GCC) version 4.7.2 (arm-none-eabi)
+	compiled by GNU C version 3.4.5 (mingw-vista special r3), GMP version 5.0.4, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 43a4e0ba549537502d3fc875bfbb9ed3
+COLLECT_GCC_OPTIONS='-O3' '-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' 'uart04.d' '-MT' 'uart04.d' '-mcpu=arm1176jzf-s' '-o' 'uart04.o'
+ c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/as.exe -v -mcpu=arm1176jzf-s -meabi=5 -adhlns=uart04.o.lst -o uart04.o C:\Temp\ccrceCYe.s
+Finished building: ../uart04.c
+GNU assembler version 2.23.1 (arm-none-eabi) using BFD version (GNU Binutils) 2.23.1
+COMPILER_PATH=c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../libexec/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/
+ 
+LIBRARY_PATH=c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../lib/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/
+Building target: uart04.elf
+COLLECT_GCC_OPTIONS='-O3' '-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' 'uart04.d' '-MT' 'uart04.d' '-mcpu=arm1176jzf-s' '-o' 'uart04.o'
+Invoking: ARM Yagarto Windows GCC C Linker
+arm-none-eabi-gcc -T"../memmap" -nostartfiles -nodefaultlibs -nostdlib -Wl,-Map,uart04.map -Xlinker --cref -Xlinker --print-map -v -mcpu=arm1176jzf-s -o "uart04.elf"  ./_vectors.o ./uart04.o   
+Using built-in specs.
+COLLECT_GCC=c:\yagarto-20121222\bin\arm-none-eabi-gcc.exe
+COLLECT_LTO_WRAPPER=c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: ../gcc-4.7.2/configure --target=arm-none-eabi --prefix=/home/yagarto/install --disable-shared --disable-nls --disable-threads --disable-libssp --disable-libstdcxx-pch --disable-libmudflap --disable-libgomp -v --enable-languages=c,c++ --enable-interwork --enable-multilib --with-gcc --with-gnu-ld --with-gnu-as --with-dwarf2 --with-newlib --with-headers=../newlib-1.20.0/newlib/libc/include --with-mpc=/home/yagarto/addontools --with-mpfr=/home/yagarto/addontools --with-gmp=/home/yagarto/addontools
+
+Allocating common symbols
+Thread model: single
+Common symbol       size              file
+gcc version 4.7.2 (GCC) 
+
+COMPILER_PATH=c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../libexec/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/
+rxhead              0x4               ./uart04.o
+LIBRARY_PATH=c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../lib/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/
+rxtail              0x4               ./uart04.o
+COLLECT_GCC_OPTIONS='-T' '../memmap' '-nostartfiles' '-nodefaultlibs' '-nostdlib' '-v' '-mcpu=arm1176jzf-s' '-o' 'uart04.elf'
+rxbuffer            0x1000            ./uart04.o
+ c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/collect2.exe -X -o uart04.elf -Lc:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2 -Lc:/yagarto-20121222/bin/../lib/gcc -Lc:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib -Map uart04.map --cref --print-map ./_vectors.o ./uart04.o -T ../memmap
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x00008000         0x00010000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./_vectors.o
+LOAD ./uart04.o
+
+.text           0x00008000      0x62c
+ *(.text*)
+ .text          0x00008000       0xb8 ./_vectors.o
+                0x00008000                _start
+                0x00008084                PUT32
+                0x0000808c                GET32
+                0x00008094                dummy
+                0x00008098                enable_irq
+ .text          0x000080b8      0x574 ./uart04.o
+                0x000080b8                uart_init
+                0x000081c4                uart_putc
+                0x000081f4                hexstrings
+                0x00008264                hexstring
+                0x0000830c                c_irq_handler
+                0x00008370                notmain
+
+.data           0x0000862c        0x0
+ .data          0x0000862c        0x0 ./_vectors.o
+ .data          0x0000862c        0x0 ./uart04.o
+
+.igot.plt       0x0000862c        0x0
+ .igot.plt      0x00000000        0x0 ./_vectors.o
+
+.glue_7         0x0000862c        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x0000862c        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x0000862c        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x0000862c        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x0000862c        0x0
+ .iplt          0x00000000        0x0 ./_vectors.o
+
+.rel.dyn        0x0000862c        0x0
+ .rel.iplt      0x00000000        0x0 ./_vectors.o
+
+.bss            0x0000862c     0x1008
+ *(.bss*)
+ .bss           0x0000862c        0x0 ./_vectors.o
+ .bss           0x0000862c        0x0 ./uart04.o
+ COMMON         0x0000862c     0x1008 ./uart04.o
+                0x0000862c                rxhead
+                0x00008630                rxtail
+                0x00008634                rxbuffer
+OUTPUT(uart04.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x34
+ .ARM.attributes
+                0x00000000       0x26 ./_vectors.o
+ .ARM.attributes
+                0x00000026       0x38 ./uart04.o
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 ./uart04.o
+                                 0x12 (size before relaxing)
+
+Cross Reference Table
+
+Symbol                                            File
+GET32                                             ./_vectors.o
+                                                  ./uart04.o
+PUT32                                             ./_vectors.o
+                                                  ./uart04.o
+_start                                            ./_vectors.o
+c_irq_handler                                     ./uart04.o
+                                                  ./_vectors.o
+dummy                                             ./_vectors.o
+                                                  ./uart04.o
+enable_irq                                        ./_vectors.o
+                                                  ./uart04.o
+hexstring                                         ./uart04.o
+hexstrings                                        ./uart04.o
+notmain                                           ./uart04.o
+                                                  ./_vectors.o
+rxbuffer                                          ./uart04.o
+rxhead                                            ./uart04.o
+rxtail                                            ./uart04.o
+uart_init                                         ./uart04.o
+uart_putc                                         ./uart04.o
+Finished building target: uart04.elf
+ 
+Invoking: ARM Yagarto Windows GNU Create Flash Image
+arm-none-eabi-objcopy -O binary uart04.elf  "uart04.hex"
+Finished building: uart04.hex
+ 
+Invoking: ARM Yagarto Windows GNU Create Listing
+arm-none-eabi-objdump -h -S uart04.elf > "uart04.lst"
+Finished building: uart04.lst
+ 
+Invoking: ARM Yagarto Windows GNU Print Size
+arm-none-eabi-size  --format=berkeley uart04.elf
+   text	   data	    bss	    dec	    hex	filename
+   1580	      0	   4104	   5684	   1634	uart04.elf
+Finished building: uart04.siz
+ 
+
+16:44:51 Build Finished (took 2s.78ms)
+

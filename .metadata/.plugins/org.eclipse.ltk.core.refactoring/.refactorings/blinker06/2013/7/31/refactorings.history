@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;blinker06/vectors.s&apos; to &apos;_vectors.S&apos;" description="Rename resource &apos;vectors.s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="vectors.s" name="_vectors.S" stamp="1375248628255" updateReferences="true"/>
+</session>

@@ -1,0 +1,458 @@
+16:12:52 **** Incremental Build of configuration Release for project uart01 ****
+make all 
+Building file: ../_vectors.S
+Invoking: ARM Yagarto Windows GCC Assembler
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="_vectors.o.lst" -v -c -fmessage-length=0 -MMD -MP -MF"_vectors.d" -MT"_vectors.d" -mcpu=arm1176jzf-s -o "_vectors.o" "../_vectors.S"
+Using built-in specs.
+COLLECT_GCC=c:\yagarto-20121222\bin\arm-none-eabi-gcc.exe
+Target: arm-none-eabi
+Configured with: ../gcc-4.7.2/configure --target=arm-none-eabi --prefix=/home/yagarto/install --disable-shared --disable-nls --disable-threads --disable-libssp --disable-libstdcxx-pch --disable-libmudflap --disable-libgomp -v --enable-languages=c,c++ --enable-interwork --enable-multilib --with-gcc --with-gnu-ld --with-gnu-as --with-dwarf2 --with-newlib --with-headers=../newlib-1.20.0/newlib/libc/include --with-mpc=/home/yagarto/addontools --with-mpfr=/home/yagarto/addontools --with-gmp=/home/yagarto/addontools
+Thread model: single
+gcc version 4.7.2 (GCC) 
+COLLECT_GCC_OPTIONS='-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' '_vectors.d' '-MT' '_vectors.d' '-mcpu=arm1176jzf-s' '-o' '_vectors.o'
+ c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/cc1.exe -E -lang-asm -quiet -v -iprefix c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/ -MMD _vectors.d -MF _vectors.d -MP -MT _vectors.d -D__USES_INITFINI__ ../_vectors.S -mcpu=arm1176jzf-s -Wall -fmessage-length=0 -fno-directives-only -o C:\Temp\ccDE125e.s
+ignoring duplicate directory "c:/yagarto-20121222/lib/gcc/../../lib/gcc/arm-none-eabi/4.7.2/include"
+ignoring duplicate directory "c:/yagarto-20121222/lib/gcc/../../lib/gcc/arm-none-eabi/4.7.2/include-fixed"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/include
+ c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/include-fixed
+ c:/yagarto-20121222/lib/gcc/../../arm-none-eabi/sys-include
+ c:/yagarto-20121222/lib/gcc/../../arm-none-eabi/include
+End of search list.
+COLLECT_GCC_OPTIONS='-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' '_vectors.d' '-MT' '_vectors.d' '-mcpu=arm1176jzf-s' '-o' '_vectors.o'
+ c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/as.exe -v -mcpu=arm1176jzf-s -meabi=5 -adhlns=_vectors.o.lst -o _vectors.o C:\Temp\ccDE125e.s
+GNU assembler version 2.23.1 (arm-none-eabi) using BFD version (GNU Binutils) 2.23.1
+COMPILER_PATH=c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../libexec/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../lib/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/
+Finished building: ../_vectors.S
+COLLECT_GCC_OPTIONS='-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' '_vectors.d' '-MT' '_vectors.d' '-mcpu=arm1176jzf-s' '-o' '_vectors.o'
+ 
+Building file: ../uart01.c
+Invoking: ARM Yagarto Windows GCC C Compiler
+arm-none-eabi-gcc -O3 -Wall -Wa,-adhlns="uart01.o.lst" -v -c -fmessage-length=0 -MMD -MP -MF"uart01.d" -MT"uart01.d" -mcpu=arm1176jzf-s -o "uart01.o" "../uart01.c"
+Using built-in specs.
+COLLECT_GCC=c:\yagarto-20121222\bin\arm-none-eabi-gcc.exe
+Target: arm-none-eabi
+Configured with: ../gcc-4.7.2/configure --target=arm-none-eabi --prefix=/home/yagarto/install --disable-shared --disable-nls --disable-threads --disable-libssp --disable-libstdcxx-pch --disable-libmudflap --disable-libgomp -v --enable-languages=c,c++ --enable-interwork --enable-multilib --with-gcc --with-gnu-ld --with-gnu-as --with-dwarf2 --with-newlib --with-headers=../newlib-1.20.0/newlib/libc/include --with-mpc=/home/yagarto/addontools --with-mpfr=/home/yagarto/addontools --with-gmp=/home/yagarto/addontools
+Thread model: single
+gcc version 4.7.2 (GCC) 
+COLLECT_GCC_OPTIONS='-O3' '-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' 'uart01.d' '-MT' 'uart01.d' '-mcpu=arm1176jzf-s' '-o' 'uart01.o'
+ c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/cc1.exe -quiet -v -iprefix c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/ -MMD uart01.d -MF uart01.d -MP -MT uart01.d -D__USES_INITFINI__ ../uart01.c -quiet -dumpbase uart01.c -mcpu=arm1176jzf-s -auxbase-strip uart01.o -O3 -Wall -version -fmessage-length=0 -o C:\Temp\ccZLuNhP.s
+GNU C (GCC) version 4.7.2 (arm-none-eabi)
+	compiled by GNU C version 3.4.5 (mingw-vista special r3), GMP version 5.0.4, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/yagarto-20121222/lib/gcc/../../lib/gcc/arm-none-eabi/4.7.2/include"
+ignoring duplicate directory "c:/yagarto-20121222/lib/gcc/../../lib/gcc/arm-none-eabi/4.7.2/include-fixed"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/include
+ c:\yagarto-20121222\bin\../lib/gcc/arm-none-eabi/4.7.2/include-fixed
+ c:/yagarto-20121222/lib/gcc/../../arm-none-eabi/sys-include
+ c:/yagarto-20121222/lib/gcc/../../arm-none-eabi/include
+End of search list.
+GNU C (GCC) version 4.7.2 (arm-none-eabi)
+	compiled by GNU C version 3.4.5 (mingw-vista special r3), GMP version 5.0.4, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 43a4e0ba549537502d3fc875bfbb9ed3
+COLLECT_GCC_OPTIONS='-O3' '-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' 'uart01.d' '-MT' 'uart01.d' '-mcpu=arm1176jzf-s' '-o' 'uart01.o'
+Finished building: ../uart01.c
+ c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/as.exe -v -mcpu=arm1176jzf-s -meabi=5 -adhlns=uart01.o.lst -o uart01.o C:\Temp\ccZLuNhP.s
+GNU assembler version 2.23.1 (arm-none-eabi) using BFD version (GNU Binutils) 2.23.1
+COMPILER_PATH=c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../libexec/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../lib/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/
+ 
+COLLECT_GCC_OPTIONS='-O3' '-Wall' '-v' '-c' '-fmessage-length=0' '-MMD' '-MP' '-MF' 'uart01.d' '-MT' 'uart01.d' '-mcpu=arm1176jzf-s' '-o' 'uart01.o'
+Building target: uart01.elf
+Invoking: ARM Yagarto Windows GCC C Linker
+arm-none-eabi-gcc -nostartfiles -nodefaultlibs -nostdlib -Wl,-Map,uart01.map -Xlinker --cref -Xlinker --print-map -v -mcpu=arm1176jzf-s -o "uart01.elf"  ./_vectors.o ./uart01.o   
+Using built-in specs.
+COLLECT_GCC=c:\yagarto-20121222\bin\arm-none-eabi-gcc.exe
+COLLECT_LTO_WRAPPER=c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: ../gcc-4.7.2/configure --target=arm-none-eabi --prefix=/home/yagarto/install --disable-shared --disable-nls --disable-threads --disable-libssp --disable-libstdcxx-pch --disable-libmudflap --disable-libgomp -v --enable-languages=c,c++ --enable-interwork --enable-multilib --with-gcc --with-gnu-ld --with-gnu-as --with-dwarf2 --with-newlib --with-headers=../newlib-1.20.0/newlib/libc/include --with-mpc=/home/yagarto/addontools --with-mpfr=/home/yagarto/addontools --with-gmp=/home/yagarto/addontools
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./_vectors.o
+LOAD ./uart01.o
+                0x00008000                PROVIDE (__executable_start, 0x8000)
+                0x00008000                . = 0x8000
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x00008000        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+                0x00008000                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x00000000        0x0 ./_vectors.o
+                0x00008000                PROVIDE (__rel_iplt_end, .)
+                0x00008000                PROVIDE (__rela_iplt_start, .)
+                0x00008000                PROVIDE (__rela_iplt_end, .)
+
+.rela.dyn       0x00008000        0x0
+Thread model: single
+ *(.rela.init)
+gcc version 4.7.2 (GCC) 
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+COMPILER_PATH=c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../libexec/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/bin/
+ *(.rela.fini)
+LIBRARY_PATH=c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/;c:/yagarto-20121222/bin/../lib/gcc/;c:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-nostartfiles' '-nodefaultlibs' '-nostdlib' '-v' '-mcpu=arm1176jzf-s' '-o' 'uart01.elf'
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ c:/yagarto-20121222/bin/../libexec/gcc/arm-none-eabi/4.7.2/collect2.exe -X -o uart01.elf -Lc:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2 -Lc:/yagarto-20121222/bin/../lib/gcc -Lc:/yagarto-20121222/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib -Map uart01.map --cref --print-map ./_vectors.o ./uart01.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+                0x00008000                PROVIDE (__rel_iplt_start, .)
+                0x00008000                PROVIDE (__rel_iplt_end, .)
+                0x00008000                PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                0x00008000                PROVIDE (__rela_iplt_end, .)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT(.init))
+
+.plt
+ *(.plt)
+
+.iplt           0x00008000        0x0
+ *(.iplt)
+ .iplt          0x00000000        0x0 ./_vectors.o
+
+.text           0x00008000      0x15c
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00008000       0x20 ./_vectors.o
+                0x00008000                _start
+                0x0000800c                PUT32
+                0x00008014                GET32
+                0x0000801c                dummy
+ .text          0x00008020      0x13c ./uart01.o
+                0x00008020                notmain
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini
+ *(SORT(.fini))
+                0x0000815c                PROVIDE (__etext, .)
+                0x0000815c                PROVIDE (_etext, .)
+                0x0000815c                PROVIDE (etext, .)
+
+.rodata
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000815c                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000815c                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0001015c                . = (ALIGN (0x8000) + (. & 0x7fff))
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0001015c        0x0
+                0x0001015c                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0001015c                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0001015c        0x0
+                0x0001015c                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x0001015c                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0001015c        0x0
+                0x0001015c                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x0001015c                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got            0x0001015c        0x0
+ *(.got.plt)
+ *(.igot.plt)
+ .igot.plt      0x00000000        0x0 ./_vectors.o
+ *(.got)
+ *(.igot)
+
+.data           0x0001015c        0x0
+                0x0001015c                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0001015c        0x0 ./_vectors.o
+ .data          0x0001015c        0x0 ./uart01.o
+
+.data1
+ *(.data1)
+                0x0001015c                _edata = .
+                0x0001015c                PROVIDE (edata, .)
+                0x0001015c                . = .
+                0x0001015c                __bss_start = .
+                0x0001015c                __bss_start__ = .
+
+.bss            0x0001015c        0x0
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0001015c        0x0 ./_vectors.o
+ .bss           0x0001015c        0x0 ./uart01.o
+ *(COMMON)
+                0x0001015c                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0001015c                _bss_end__ = .
+                0x0001015c                __bss_end__ = .
+                0x0001015c                . = ALIGN (0x4)
+                0x0001015c                . = ALIGN (0x4)
+                0x0001015c                __end__ = .
+                0x0001015c                _end = .
+                0x0001015c                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x11
+ *(.comment)
+ .comment       0x00000000       0x11 ./uart01.o
+                                 0x12 (size before relaxing)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.stack          0x00080000        0x0
+                0x00080000                _stack = .
+ *(.stack)
+
+.ARM.attributes
+                0x00000000       0x34
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x26 ./_vectors.o
+ .ARM.attributes
+                0x00000026       0x38 ./uart01.o
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uart01.elf elf32-littlearm)
+
+Cross Reference Table
+
+Symbol                                            File
+GET32                                             ./_vectors.o
+                                                  ./uart01.o
+PUT32                                             ./_vectors.o
+                                                  ./uart01.o
+_start                                            ./_vectors.o
+dummy                                             ./_vectors.o
+                                                  ./uart01.o
+notmain                                           ./uart01.o
+                                                  ./_vectors.o
+Finished building target: uart01.elf
+ 
+Invoking: ARM Yagarto Windows GNU Create Flash Image
+arm-none-eabi-objcopy -O binary uart01.elf  "uart01.hex"
+Finished building: uart01.hex
+ 
+Invoking: ARM Yagarto Windows GNU Create Listing
+arm-none-eabi-objdump -h -S uart01.elf > "uart01.lst"
+Finished building: uart01.lst
+ 
+Invoking: ARM Yagarto Windows GNU Print Size
+arm-none-eabi-size  --format=berkeley uart01.elf
+   text	   data	    bss	    dec	    hex	filename
+    348	      0	      0	    348	    15c	uart01.elf
+Finished building: uart01.siz
+ 
+
+16:12:55 Build Finished (took 2s.141ms)
+

@@ -1,0 +1,35 @@
+22:33:10 **** Clean-only build of configuration Release for project blinker01 ****
+make clean 
+rm -rf  blinker01.siz  ./_vectors.o ./blinker01.o  ./blinker01.d  blinker01.hex  blinker01.lst  ./_vectors.d  blinker01.elf
+ 
+22:33:10 **** Incremental Build of configuration Release for project blinker01 ****
+make all 
+Building file: ../_vectors.S
+Invoking: ARM Yagarto Windows GCC Assembler
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="_vectors.o.lst" -c -fmessage-length=0 -MMD -MP -MF"_vectors.d" -MT"_vectors.d" -mcpu=arm1176jzf-s -o "_vectors.o" "../_vectors.S"
+Finished building: ../_vectors.S
+ 
+Building file: ../blinker01.c
+Invoking: ARM Yagarto Windows GCC C Compiler
+arm-none-eabi-gcc -Os -Wall -Wa,-adhlns="blinker01.o.lst" -c -fmessage-length=0 -MMD -MP -MF"blinker01.d" -MT"blinker01.d" -mcpu=arm1176jzf-s -o "blinker01.o" "../blinker01.c"
+Finished building: ../blinker01.c
+ 
+Building target: blinker01.elf
+Invoking: ARM Yagarto Windows GCC C Linker
+arm-none-eabi-gcc -nostartfiles -Wl,-Map,blinker01.map -mcpu=arm1176jzf-s -o "blinker01.elf"  ./_vectors.o ./blinker01.o   
+Finished building target: blinker01.elf
+ 
+Invoking: ARM Yagarto Windows GNU Create Flash Image
+arm-none-eabi-objcopy -O ihex blinker01.elf  "blinker01.hex"
+Finished building: blinker01.hex
+ 
+Invoking: ARM Yagarto Windows GNU Create Listing
+arm-none-eabi-objdump -h -S blinker01.elf > "blinker01.lst"
+Finished building: blinker01.lst
+ 
+Invoking: ARM Yagarto Windows GNU Print Size
+arm-none-eabi-size  --format=berkeley blinker01.elf
+   text	   data	    bss	    dec	    hex	filename
+    148	      0	      0	    148	     94	blinker01.elf
+Finished building: blinker01.siz
+ 

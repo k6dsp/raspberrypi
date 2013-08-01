@@ -1,0 +1,145 @@
+   1              		.cpu arm1176jzf-s
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"blinker01.c"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.align	2
+  17              		.global	notmain
+  19              	notmain:
+  20              	.LFB0:
+  21              		.file 1 "../blinker01.c"
+   1:../blinker01.c **** 
+   2:../blinker01.c **** //-------------------------------------------------------------------------
+   3:../blinker01.c **** //-------------------------------------------------------------------------
+   4:../blinker01.c **** 
+   5:../blinker01.c **** extern void PUT32 ( unsigned int, unsigned int );
+   6:../blinker01.c **** extern unsigned int GET32 ( unsigned int );
+   7:../blinker01.c **** extern void dummy ( unsigned int );
+   8:../blinker01.c **** 
+   9:../blinker01.c **** #define GPFSEL1 0x20200004
+  10:../blinker01.c **** #define GPSET0  0x2020001C
+  11:../blinker01.c **** #define GPCLR0  0x20200028
+  12:../blinker01.c **** 
+  13:../blinker01.c **** //-------------------------------------------------------------------------
+  14:../blinker01.c **** int notmain ( void )
+  15:../blinker01.c **** {
+  22              		.loc 1 15 0
+  23              		.cfi_startproc
+  24              		@ args = 0, pretend = 0, frame = 8
+  25              		@ frame_needed = 1, uses_anonymous_args = 0
+  26 0000 00482DE9 		stmfd	sp!, {fp, lr}
+  27              	.LCFI0:
+  28              		.cfi_def_cfa_offset 8
+  29              		.cfi_offset 11, -8
+  30              		.cfi_offset 14, -4
+  31 0004 04B08DE2 		add	fp, sp, #4
+  32              	.LCFI1:
+  33              		.cfi_def_cfa 11, 4
+  34 0008 08D04DE2 		sub	sp, sp, #8
+  16:../blinker01.c ****     unsigned int ra;
+  17:../blinker01.c **** 
+  18:../blinker01.c ****     ra=GET32(GPFSEL1);
+  35              		.loc 1 18 0
+  36 000c A4009FE5 		ldr	r0, .L7
+  37 0010 FEFFFFEB 		bl	GET32
+  38 0014 08000BE5 		str	r0, [fp, #-8]
+  19:../blinker01.c ****     ra&=~(7<<18);
+  39              		.loc 1 19 0
+  40 0018 08301BE5 		ldr	r3, [fp, #-8]
+  41 001c 0737C3E3 		bic	r3, r3, #1835008
+  42 0020 08300BE5 		str	r3, [fp, #-8]
+  20:../blinker01.c ****     ra|=1<<18;
+  43              		.loc 1 20 0
+  44 0024 08301BE5 		ldr	r3, [fp, #-8]
+  45 0028 013783E3 		orr	r3, r3, #262144
+  46 002c 08300BE5 		str	r3, [fp, #-8]
+  21:../blinker01.c ****     PUT32(GPFSEL1,ra);
+  47              		.loc 1 21 0
+  48 0030 80009FE5 		ldr	r0, .L7
+  49 0034 08101BE5 		ldr	r1, [fp, #-8]
+  50 0038 FEFFFFEB 		bl	PUT32
+  51              	.L6:
+  22:../blinker01.c **** 
+  23:../blinker01.c ****     while(1)
+  24:../blinker01.c ****     {
+  25:../blinker01.c ****         PUT32(GPSET0,1<<16);
+  52              		.loc 1 25 0
+  53 003c 78009FE5 		ldr	r0, .L7+4
+  54 0040 0118A0E3 		mov	r1, #65536
+  55 0044 FEFFFFEB 		bl	PUT32
+  26:../blinker01.c ****         for(ra=0;ra<0x100000;ra++) dummy(ra);
+  56              		.loc 1 26 0
+  57 0048 0030A0E3 		mov	r3, #0
+  58 004c 08300BE5 		str	r3, [fp, #-8]
+  59 0050 040000EA 		b	.L2
+  60              	.L3:
+  61              		.loc 1 26 0 is_stmt 0 discriminator 2
+  62 0054 08001BE5 		ldr	r0, [fp, #-8]
+  63 0058 FEFFFFEB 		bl	dummy
+  64 005c 08301BE5 		ldr	r3, [fp, #-8]
+  65 0060 013083E2 		add	r3, r3, #1
+  66 0064 08300BE5 		str	r3, [fp, #-8]
+  67              	.L2:
+  68              		.loc 1 26 0 discriminator 1
+  69 0068 08201BE5 		ldr	r2, [fp, #-8]
+  70 006c 4C309FE5 		ldr	r3, .L7+8
+  71 0070 030052E1 		cmp	r2, r3
+  72 0074 F6FFFF9A 		bls	.L3
+  27:../blinker01.c ****         PUT32(GPCLR0,1<<16);
+  73              		.loc 1 27 0 is_stmt 1
+  74 0078 44009FE5 		ldr	r0, .L7+12
+  75 007c 0118A0E3 		mov	r1, #65536
+  76 0080 FEFFFFEB 		bl	PUT32
+  28:../blinker01.c ****         for(ra=0;ra<0x100000;ra++) dummy(ra);
+  77              		.loc 1 28 0
+  78 0084 0030A0E3 		mov	r3, #0
+  79 0088 08300BE5 		str	r3, [fp, #-8]
+  80 008c 040000EA 		b	.L4
+  81              	.L5:
+  82              		.loc 1 28 0 is_stmt 0 discriminator 2
+  83 0090 08001BE5 		ldr	r0, [fp, #-8]
+  84 0094 FEFFFFEB 		bl	dummy
+  85 0098 08301BE5 		ldr	r3, [fp, #-8]
+  86 009c 013083E2 		add	r3, r3, #1
+  87 00a0 08300BE5 		str	r3, [fp, #-8]
+  88              	.L4:
+  89              		.loc 1 28 0 discriminator 1
+  90 00a4 08201BE5 		ldr	r2, [fp, #-8]
+  91 00a8 10309FE5 		ldr	r3, .L7+8
+  92 00ac 030052E1 		cmp	r2, r3
+  93 00b0 F6FFFF9A 		bls	.L5
+  29:../blinker01.c ****     }
+  94              		.loc 1 29 0 is_stmt 1
+  95 00b4 E0FFFFEA 		b	.L6
+  96              	.L8:
+  97              		.align	2
+  98              	.L7:
+  99 00b8 04002020 		.word	538968068
+ 100 00bc 1C002020 		.word	538968092
+ 101 00c0 FFFF0F00 		.word	1048575
+ 102 00c4 28002020 		.word	538968104
+ 103              		.cfi_endproc
+ 104              	.LFE0:
+ 106              	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 blinker01.c
+  C:\Temp\ccjUGGvC.s:16     .text:00000000 $a
+  C:\Temp\ccjUGGvC.s:19     .text:00000000 notmain
+  C:\Temp\ccjUGGvC.s:99     .text:000000b8 $d
+                     .debug_frame:00000010 $d
+                           .group:00000000 wm4.1.54023c46a6e0801146e92cfe75784eaa
+
+UNDEFINED SYMBOLS
+GET32
+PUT32
+dummy
