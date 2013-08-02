@@ -56,7 +56,6 @@
 							<tool id="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.printsize.debug.653153121" name="ARM Yagarto Windows GNU Print Size" superClass="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.printsize.debug"/>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.debug.540808702.85161292" name="bvectors.s" rcbsApplicability="disable" resourcePath="bvectors.s" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="blinker05.c|bvectors.s" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
@@ -119,7 +118,6 @@
 							<tool id="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.printsize.release.286740697" name="ARM Yagarto Windows GNU Print Size" superClass="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.printsize.release"/>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.release.1816351650.731932629" name="bvectors.s" rcbsApplicability="disable" resourcePath="bvectors.s" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="blinker05.c|bvectors.s" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
