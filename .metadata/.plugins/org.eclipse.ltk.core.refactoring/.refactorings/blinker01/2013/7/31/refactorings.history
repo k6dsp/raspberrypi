@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;blinker01/vectors.s&apos; to &apos;_vectors.s&apos;" description="Rename resource &apos;vectors.s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="vectors.s" name="_vectors.s" stamp="1375244030741" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;blinker01/_vectors.s&apos; to &apos;_vectors.S&apos;" description="Rename resource &apos;_vectors.s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="_vectors.s" name="_vectors.S" stamp="1375244318462" updateReferences="true"/>
-</session>
