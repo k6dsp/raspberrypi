@@ -41,6 +41,24 @@ extern void dummy ( unsigned int );
 #define AUX_MU_STAT_REG 0x20215064
 #define AUX_MU_BAUD_REG 0x20215068
 
+#define ARM_TIMER_LOD 0x2000B400
+#define ARM_TIMER_VAL 0x2000B404
+#define ARM_TIMER_CTL 0x2000B408
+#define ARM_TIMER_CLI 0x2000B40C
+#define ARM_TIMER_RIS 0x2000B410
+#define ARM_TIMER_MIS 0x2000B414
+#define ARM_TIMER_RLD 0x2000B418
+#define ARM_TIMER_DIV 0x2000B41C
+#define ARM_TIMER_CNT 0x2000B420
+
+#define SYSTIMERCLO 0x20003004
+
+volatile unsigned int icount;
+
+int getTimerCount()
+{
+	return GET32(ARM_TIMER_CNT);
+}
 
 
 extern void core_init(void);
@@ -130,33 +148,35 @@ int main(void)
     clock_t starttime, endtime;
     int i;
 
-        unsigned int ra;
-
-        PUT32(AUX_ENABLES,1);
-        PUT32(AUX_MU_IER_REG,0);
-        PUT32(AUX_MU_CNTL_REG,0);
-        PUT32(AUX_MU_LCR_REG,3);
-        PUT32(AUX_MU_MCR_REG,0);
-        PUT32(AUX_MU_IER_REG,0);
-        PUT32(AUX_MU_IIR_REG,0xC6);
-        PUT32(AUX_MU_BAUD_REG,270);
-
-        ra=GET32(GPFSEL1);
-        ra&=~(7<<12); //gpio14
-        ra|=2<<12;    //alt5
-        ra&=~(7<<15); //gpio15
-        ra|=2<<15;    //alt5
-        PUT32(GPFSEL1,ra);
-
-        PUT32(GPPUD,0);
-        for(ra=0;ra<150;ra++) dummy(ra);
-        PUT32(GPPUDCLK0,(1<<14)|(1<<15));
-        for(ra=0;ra<150;ra++) dummy(ra);
-        PUT32(GPPUDCLK0,0);
-
-        PUT32(AUX_MU_CNTL_REG,3);
+	unsigned int ra;
 
 
+	PUT32(AUX_ENABLES,1);
+	PUT32(AUX_MU_IER_REG,0);
+	PUT32(AUX_MU_CNTL_REG,0);
+	PUT32(AUX_MU_LCR_REG,3);
+	PUT32(AUX_MU_MCR_REG,0);
+	PUT32(AUX_MU_IER_REG,0);
+	PUT32(AUX_MU_IIR_REG,0xC6);
+	PUT32(AUX_MU_BAUD_REG,270);
+
+	ra=GET32(GPFSEL1);
+	ra&=~(7<<12); //gpio14
+	ra|=2<<12;    //alt5
+	ra&=~(7<<15); //gpio15
+	ra|=2<<15;    //alt5
+	PUT32(GPFSEL1,ra);
+
+	PUT32(GPPUD,0);
+	for(ra=0;ra<150;ra++) dummy(ra);
+	PUT32(GPPUDCLK0,(1<<14)|(1<<15));
+	for(ra=0;ra<150;ra++) dummy(ra);
+	PUT32(GPPUDCLK0,0);
+
+	PUT32(AUX_MU_CNTL_REG,3);
+
+	PUT32(ARM_TIMER_CTL,0x00F90000);
+	PUT32(ARM_TIMER_CTL,0x00F90200);
 
 
     core_init();                    // does some extra setup work
@@ -188,7 +208,7 @@ int main(void)
     shell_sort(strings_copy, N);
     endtime = clock();
     check_order("Shell", strings_copy, N);
-    printf("Shell sort took %d clock ticks\n", endtime - starttime);
+    printf("Shell sort took %d clock ticks, end time %d and start time %d\n", endtime - starttime, endtime, starttime);
 
     /* Do quick sort - use built-in C library sort */
     memcpy(strings_copy, strings, sizeof(strings));
@@ -196,7 +216,7 @@ int main(void)
     qsort(strings_copy, N, sizeof(char *), qs_string_compare);
     endtime = clock();
     check_order("Quick", strings_copy, N);
-    printf("Quick sort took %d clock ticks\n", endtime - starttime);
+    printf("Quick sort took %d clock ticks, end time %d and start time %d\n", endtime - starttime, endtime, starttime);
 
     return 0;
 }

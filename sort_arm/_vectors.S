@@ -2,7 +2,6 @@
 .globl _start
 _start:
     mov sp,#0x8000
-    mov r0,pc
     bl main
 hang: b hang
 
@@ -20,8 +19,9 @@ GET32:
 dummy:
     bx lr
 
-        .global core_init
 
+
+.global core_init
 core_init:
 
 //==================================================================

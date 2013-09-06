@@ -17,6 +17,7 @@ void uart_putc ( unsigned int c );
 
 unsigned int heap_end=0x0020000;
 unsigned int prev_heap_end;
+extern int getTimerCount();
 
 /* Forward prototypes.  */
 int     _system     _PARAMS ((const char *));
@@ -190,7 +191,7 @@ _times (struct tms * tp)
     if (tp)
     {
         tp->tms_utime  = timeval;   /* user time */
-        tp->tms_stime  = 43; /* system time */
+        tp->tms_stime  =  getTimerCount(); /* system time */
         tp->tms_cutime = 0; /* user time, children */
         tp->tms_cstime = 0; /* system time, children */
     }
