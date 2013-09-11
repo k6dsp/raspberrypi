@@ -11,8 +11,8 @@
 
 #define N               1000
 
-#if N > 1000
-#error "Value of N too big, must be <= 1000"
+#if N > 1000000
+#error "Value of N too big, must be <= 1000000"
 #endif
 
 #define LOG10_N         6
@@ -63,7 +63,7 @@ int getTimerCount()
 
 extern void core_init(void);
 
-#if N <= 10000
+#if N <= 1000
 static void insert_sort(char *strings[], int n)
 {
     char *v, *t;

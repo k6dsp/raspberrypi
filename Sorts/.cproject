@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject>
+<storageModule moduleId="org.eclipse.cdt.core.settings">
+
+<cconfiguration id="cdt.managedbuild.config.arm41.exe.debug.648558308">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.arm41.exe.debug.648558308" moduleId="org.eclipse.cdt.core.settings" name="sorts">
+<externalSettings/>
+<extensions>
+<extension id="com.arm.eclipse.cdt.managedbuilder.ARMELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactExtension="axf" artifactName="sorts" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm41.exe.debug.648558308" name="sorts" parent="cdt.managedbuild.config.arm41.exe.debug" postbuildStep="" prebuildStep="">
+<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308." name="/" resourcePath="">
+<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.1863093588" name="ARM Compilation Tools 4.1" superClass="cdt.managedbuild.toolchain.arm41.exe.debug">
+<targetPlatform id="cdt.managedbuild.target.arm41.exe.380088704" superClass="cdt.managedbuild.target.arm41.exe"/>
+<builder buildPath="${workspace_loc:/Sorts/sorts}" id="cdt.managedbuild.target.arm.builder41.exe.565050326" name="CDT Internal Builder.sorts" superClass="cdt.managedbuild.target.arm.builder41.exe"/>
+<tool id="cdt.managedbuild.tool.arm.armcc41.exe.704315662" name="ARM Compiler 4.1" superClass="cdt.managedbuild.tool.arm.armcc41.exe">
+<option defaultValue="true" id="arm.rvct.armcc41.option.override.CONFIG_DEBUG.141399925" superClass="arm.rvct.armcc41.option.override.CONFIG_DEBUG" valueType="boolean"/>
+<option defaultValue="arm.rvct.armcc.option.OPTLEVEL.0" id="arm.rvct.armcc41.option.override.OPTLEVEL.1168257301" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="Restricted optimization, good debug (1)" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.CONFIG_LANG.440203688" superClass="arm.rvct.armcc41.option.CONFIG_LANG" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.CONFIG_ISET.364522097" superClass="arm.rvct.armcc41.option.CONFIG_ISET" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.CONFIG_CPU.155554133" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM7TDMI" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.CONFIG_DEVICE.16845758" superClass="arm.rvct.armcc41.option.CONFIG_DEVICE" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.CONFIG_FPU.1791802352" superClass="arm.rvct.armcc41.option.CONFIG_FPU" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.CONFIG_FPMODE.341747478" superClass="arm.rvct.armcc41.option.CONFIG_FPMODE" value="C/C++ Standard" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.CONFIG_B_ENDIAN.1825781495" superClass="arm.rvct.armcc41.option.CONFIG_B_ENDIAN" value="Little Endian" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.OPTTIME.1702434984" superClass="arm.rvct.armcc41.option.OPTTIME" value="Space" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.DIAG_STYLE.1012869052" superClass="arm.rvct.armcc41.option.DIAG_STYLE" value="ARM format output" valueType="enumerated"/>
+<option id="arm.rvct.armcc41.option.CONFIG_STRICT.1191858325" superClass="arm.rvct.armcc41.option.CONFIG_STRICT" value="Not strict" valueType="enumerated"/>
+<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1739058700" superClass="cdt.managedbuild.tool.abstract.head.arm.armcc.input"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armasm41.exe.1297142005" name="ARM Assembler 4.1" superClass="cdt.managedbuild.tool.arm.armasm41.exe">
+<option defaultValue="true" id="arm.rvct.armasm41.option.override.DEBUG.1931821129" superClass="arm.rvct.armasm41.option.override.DEBUG" valueType="boolean"/>
+<option id="arm.rvct.armasm41.option.ARM.138929139" superClass="arm.rvct.armasm41.option.ARM" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armasm41.option.DIAG_STYLE.1828975961" superClass="arm.rvct.armasm41.option.DIAG_STYLE" value="ARM format output" valueType="enumerated"/>
+<option id="arm.rvct.armasm41.option.CONFIG_CPU.424141841" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM7TDMI" valueType="enumerated"/>
+<option id="arm.rvct.armasm41.option.CONFIG_DEVICE.2048882492" superClass="arm.rvct.armasm41.option.CONFIG_DEVICE" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armasm41.option.CONFIG_FPU.563831788" superClass="arm.rvct.armasm41.option.CONFIG_FPU" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armasm41.option.CONFIG_FPMODE.1636152253" superClass="arm.rvct.armasm41.option.CONFIG_FPMODE" value="C/C++ Standard" valueType="enumerated"/>
+<option id="arm.rvct.armasm41.option.CONFIG_B_ENDIAN.680965099" superClass="arm.rvct.armasm41.option.CONFIG_B_ENDIAN" value="Little Endian" valueType="enumerated"/>
+<option id="arm.rvct.armasm41.option.REGNAMES.604604958" superClass="arm.rvct.armasm41.option.REGNAMES" value="callstd" valueType="enumerated"/>
+<option id="arm.rvct.armasm41.option.KEEP.1458407730" superClass="arm.rvct.armasm41.option.KEEP" value="true" valueType="boolean"/>
+<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.674793060" superClass="cdt.managedbuild.tool.abstract.head.arm.armasm.input"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armlink41.1379817403" name="ARM Linker 4.1" superClass="cdt.managedbuild.tool.arm.armlink41">
+<option id="arm.rvct.armlink41.option.LIBRARY_TYPE.343743158" superClass="arm.rvct.armlink41.option.LIBRARY_TYPE" value="unspecified" valueType="enumerated"/>
+<option id="arm.rvct.armlink41.option.DIAG_STYLE.1704026844" superClass="arm.rvct.armlink41.option.DIAG_STYLE" value="ARM format output" valueType="enumerated"/>
+<option id="arm.rvct.armlink41.option.CONFIG_CPU.634550421" superClass="arm.rvct.armlink41.option.CONFIG_CPU" value="ARM7TDMI" valueType="enumerated"/>
+<option id="arm.rvct.armlink41.option.CONFIG_DEVICE.238880321" superClass="arm.rvct.armlink41.option.CONFIG_DEVICE" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armlink41.option.CONFIG_FPU.561416538" superClass="arm.rvct.armlink41.option.CONFIG_FPU" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armlink41.option.CONFIG_FPMODE.1808939255" superClass="arm.rvct.armlink41.option.CONFIG_FPMODE" value="C/C++ Standard" valueType="enumerated"/>
+<option id="arm.rvct.armlink41.option.CONFIG_B_ENDIAN.1441436336" superClass="arm.rvct.armlink41.option.CONFIG_B_ENDIAN" value="Little Endian" valueType="enumerated"/>
+<option id="arm.rvct.armlink41.option.INFO.1287009859" superClass="arm.rvct.armlink41.option.INFO" valueType="stringList">
+<listOptionValue builtIn="false" value="totals"/>
+</option>
+</tool>
+</toolChain>
+</folderInfo>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308.sorts.sh" name="sorts.sh" rcbsApplicability="disable" resourcePath="sorts.sh" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308.readme.txt" name="readme.txt" rcbsApplicability="disable" resourcePath="readme.txt" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308.sorts.mk" name="sorts.mk" rcbsApplicability="disable" resourcePath="sorts.mk" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/README.txt" name="README.txt" rcbsApplicability="disable" resourcePath=".svn/README.txt" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/dir-wcprops" name="dir-wcprops" rcbsApplicability="disable" resourcePath=".svn/dir-wcprops" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/empty-file" name="empty-file" rcbsApplicability="disable" resourcePath=".svn/empty-file" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/text-base/.cdtbuild.svn-base" name=".cdtbuild.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/.cdtbuild.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/text-base/sorts.mcp.svn-base" name="sorts.mcp.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/sorts.mcp.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/text-base/.project.svn-base" name=".project.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/.project.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/text-base/.cdtproject.svn-base" name=".cdtproject.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/.cdtproject.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/text-base/sorts.c.svn-base" name="sorts.c.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/sorts.c.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/text-base/sorts.mk.svn-base" name="sorts.mk.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/sorts.mk.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/text-base/sorts.bat.svn-base" name="sorts.bat.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/sorts.bat.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/text-base/sorts.sh.svn-base" name="sorts.sh.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/sorts.sh.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/text-base/readme.txt.svn-base" name="readme.txt.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/readme.txt.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/wcprops/.cdtbuild.svn-work" name=".cdtbuild.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/.cdtbuild.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/wcprops/sorts.mcp.svn-work" name="sorts.mcp.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/sorts.mcp.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/wcprops/.cdtproject.svn-work" name=".cdtproject.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/.cdtproject.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/wcprops/readme.txt.svn-work" name="readme.txt.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/readme.txt.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/wcprops/sorts.mk.svn-work" name="sorts.mk.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/sorts.mk.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/wcprops/sorts.sh.svn-work" name="sorts.sh.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/sorts.sh.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/wcprops/.project.svn-work" name=".project.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/.project.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/wcprops/sorts.bat.svn-work" name="sorts.bat.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/sorts.bat.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/wcprops/sorts.c.svn-work" name="sorts.c.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/sorts.c.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/entries" name="entries" rcbsApplicability="disable" resourcePath=".svn/entries" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/format" name="format" rcbsApplicability="disable" resourcePath=".svn/format" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/prop-base/.cdtbuild.svn-base" name=".cdtbuild.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/.cdtbuild.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/prop-base/sorts.mcp.svn-base" name="sorts.mcp.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/sorts.mcp.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/prop-base/.project.svn-base" name=".project.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/.project.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/prop-base/.cdtproject.svn-base" name=".cdtproject.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/.cdtproject.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/prop-base/sorts.c.svn-base" name="sorts.c.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/sorts.c.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/prop-base/sorts.mk.svn-base" name="sorts.mk.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/sorts.mk.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/prop-base/sorts.bat.svn-base" name="sorts.bat.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/sorts.bat.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/prop-base/sorts.sh.svn-base" name="sorts.sh.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/sorts.sh.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/prop-base/readme.txt.svn-base" name="readme.txt.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/readme.txt.svn-base" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/props/.cdtbuild.svn-work" name=".cdtbuild.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/.cdtbuild.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/props/sorts.mcp.svn-work" name="sorts.mcp.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/sorts.mcp.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/props/.cdtproject.svn-work" name=".cdtproject.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/.cdtproject.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/props/readme.txt.svn-work" name="readme.txt.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/readme.txt.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/props/sorts.mk.svn-work" name="sorts.mk.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/sorts.mk.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/props/sorts.sh.svn-work" name="sorts.sh.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/sorts.sh.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/props/.project.svn-work" name=".project.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/.project.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/props/sorts.bat.svn-work" name="sorts.bat.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/sorts.bat.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308..svn/props/sorts.c.svn-work" name="sorts.c.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/sorts.c.svn-work" toolsToInvoke=""/>
+<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.648558308.sorts.bat" name="sorts.bat" rcbsApplicability="disable" resourcePath="sorts.bat" toolsToInvoke=""/>
+<sourceEntries>
+<entry excluding=".svn/README.txt|.svn/dir-wcprops|.svn/empty-file|.svn/entries|.svn/format|.svn/prop-base/.cdtbuild.svn-base|.svn/prop-base/.cdtproject.svn-base|.svn/prop-base/.project.svn-base|.svn/prop-base/readme.txt.svn-base|.svn/prop-base/sorts.bat.svn-base|.svn/prop-base/sorts.c.svn-base|.svn/prop-base/sorts.mcp.svn-base|.svn/prop-base/sorts.mk.svn-base|.svn/prop-base/sorts.sh.svn-base|.svn/props/.cdtbuild.svn-work|.svn/props/.cdtproject.svn-work|.svn/props/.project.svn-work|.svn/props/readme.txt.svn-work|.svn/props/sorts.bat.svn-work|.svn/props/sorts.c.svn-work|.svn/props/sorts.mcp.svn-work|.svn/props/sorts.mk.svn-work|.svn/props/sorts.sh.svn-work|.svn/text-base/.cdtbuild.svn-base|.svn/text-base/.cdtproject.svn-base|.svn/text-base/.project.svn-base|.svn/text-base/readme.txt.svn-base|.svn/text-base/sorts.bat.svn-base|.svn/text-base/sorts.c.svn-base|.svn/text-base/sorts.mcp.svn-base|.svn/text-base/sorts.mk.svn-base|.svn/text-base/sorts.sh.svn-base|.svn/wcprops/.cdtbuild.svn-work|.svn/wcprops/.cdtproject.svn-work|.svn/wcprops/.project.svn-work|.svn/wcprops/readme.txt.svn-work|.svn/wcprops/sorts.bat.svn-work|.svn/wcprops/sorts.c.svn-work|.svn/wcprops/sorts.mcp.svn-work|.svn/wcprops/sorts.mk.svn-work|.svn/wcprops/sorts.sh.svn-work|readme.txt|sorts.bat|sorts.mk|sorts.sh" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+</sourceEntries>
+</configuration>
+</storageModule>
+<storageModule moduleId="scannerConfiguration"/>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+</cconfiguration>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<project id="sorts.cdt.managedbuild.target.arm.executable.1122754042" name="Executable (ARM)" projectType="cdt.managedbuild.target.arm41.exe"/>
+</storageModule>
+</cproject>

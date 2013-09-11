@@ -1,0 +1,33 @@
+;;  Copyright ARM Ltd 2005-2008. All rights reserved.
+
+
+ROM_LOAD 0x20000
+{
+
+    ROM_EXEC 0x20000
+    {
+        init.o (INITARM1136, +First)        ; Core initialization code
+        * (InRoot$$Sections)                ; We place the library sections in the root region
+        retarget.o (+RO)                    ; e.g. __main.o, __scatter*.o, * (Region$$Table) 
+    }
+
+    I-TCM 0x100 0x7F00                      ; built at 0x100 to avoid vector space
+    {                                       ; assumes 32KB I-TCM
+        dhry_1.o (+RO)
+        dhry_2.o (+RO)
+        * (+RO)                             ; any remaining code inc C lib. 
+    }
+    
+    D-TCM 0x10000 0x4000                    ; Up to 16 KB of D-TCM used for RW/ZI
+    {                                       ; assumes 32KB D-TCM
+        * (+RW,+ZI)
+    }
+
+    ARM_LIB_STACKHEAP 0x14000 EMPTY 4000    ; 16KB stack and heap in D-TCM
+    {
+    }
+        
+    TTB 0x28000 EMPTY 0x4000 {}             ; place translation table at 0x28000, 16KB required
+                                            ; linker generates symbol Image$$TTB$$ZI$$Base
+                                            ; to be imported by init.s
+}

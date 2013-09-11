@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="svc.cdt.managedbuild.target.arm.executable.1171676823" name="Executable (ARM)" projectType="cdt.managedbuild.target.arm.executable">
+<configuration artifactExtension="axf" artifactName="svc" cleanCommand="rm -f" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm.executable.debug1936146748" name="build" parent="cdt.managedbuild.config.arm.executable.debug" prebuildStep="make -v">
+<toolChain id="cdt.managedbuild.toolchain.arm.executable.debug.13949617" name="ARM Tool Chain" superClass="cdt.managedbuild.toolchain.arm.executable.debug">
+<tool id="cdt.managedbuild.tool.arm.armcc.executable.debug.1122698452" name="ARM RealView Compiler" superClass="cdt.managedbuild.tool.arm.armcc.executable.debug">
+<option id="arm.rvct.armcc.option.CONFIG_LANG.1049867313" superClass="arm.rvct.armcc.option.CONFIG_LANG" value="arm.rvct.armcc.option.CONFIG_LANG.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_ISET.1762336888" superClass="arm.rvct.armcc.option.CONFIG_ISET" value="arm.rvct.armcc.option.CONFIG_ISET.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_CPU.185439890" superClass="arm.rvct.armcc.option.CONFIG_CPU" value="arm.rvct.armcc.option.CONFIG_CPU.ARM7TDMI" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_FPU.1699598840" superClass="arm.rvct.armcc.option.CONFIG_FPU" value="arm.rvct.armcc.option.CONFIG_FPU.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_FPMODE.118946907" superClass="arm.rvct.armcc.option.CONFIG_FPMODE" value="arm.rvct.armcc.option.CONFIG_FPMODE.std" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_B_ENDIAN.1318557252" superClass="arm.rvct.armcc.option.CONFIG_B_ENDIAN" value="arm.rvct.armcc.option.CONFIG_B_ENDIAN.false" valueType="enumerated"/>
+<option id="arm.rvct.armcc.abstract.debug.option.OPTLEVEL.176371097" superClass="arm.rvct.armcc.abstract.debug.option.OPTLEVEL" value="arm.rvct.armcc.option.OPTLEVEL.1" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.OPTTIME.1735490702" superClass="arm.rvct.armcc.option.OPTTIME" value="arm.rvct.armcc.option.OPTTIME.space" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.DIAG_STYLE.569843629" superClass="arm.rvct.armcc.option.DIAG_STYLE" value="arm.rvct.armcc.option.DIAG_STYLE.arm" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_STRICT.1158708515" superClass="arm.rvct.armcc.option.CONFIG_STRICT" value="arm.rvct.armcc.option.CONFIG_STRICT.STRICT_NONE" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.INCLUDE_PATH1283085327" name="User Include Paths (-I)" superClass="arm.rvct.armcc.option.INCLUDE_PATH"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armasm.executable.debug.757345749" name="ARM RealView Assembler" superClass="cdt.managedbuild.tool.arm.armasm.executable.debug">
+<option id="arm.rvct.armasm.option.ARM.1902638588" superClass="arm.rvct.armasm.option.ARM" value="arm.rvct.armasm.option.ARM.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armasm.abstract.debug.option.KEEP.515282084" superClass="arm.rvct.armasm.abstract.debug.option.KEEP" value="false" valueType="boolean"/>
+<option id="arm.rvct.armasm.option.DIAG_STYLE.1104377371" superClass="arm.rvct.armasm.option.DIAG_STYLE" value="arm.rvct.armasm.option.DIAG_STYLE.arm" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_CPU.70387574" superClass="arm.rvct.armasm.option.CONFIG_CPU" value="arm.rvct.armasm.option.CONFIG_CPU.ARM7TDMI" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_FPU.984118039" superClass="arm.rvct.armasm.option.CONFIG_FPU" value="arm.rvct.armasm.option.CONFIG_FPU.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_FPMODE.548701240" superClass="arm.rvct.armasm.option.CONFIG_FPMODE" value="arm.rvct.armasm.option.CONFIG_FPMODE.std" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_B_ENDIAN.1198012224" superClass="arm.rvct.armasm.option.CONFIG_B_ENDIAN" value="arm.rvct.armasm.option.CONFIG_B_ENDIAN.false" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.REGNAMES.810000217" superClass="arm.rvct.armasm.option.REGNAMES" value="arm.rvct.armasm.option.REGNAMES.callstd" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.INCLUDE788158895" name="Include Paths (-I)" superClass="arm.rvct.armasm.option.INCLUDE"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armlink.executable.debug.1624323566" name="ARM RealView Linker" superClass="cdt.managedbuild.tool.arm.armlink.executable.debug">
+<option id="arm.rvct.armlink.option.DIAG_STYLE.98037704" superClass="arm.rvct.armlink.option.DIAG_STYLE" value="arm.rvct.armlink.option.DIAG_STYLE.arm" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.CONFIG_CPU.974608192" superClass="arm.rvct.armlink.option.CONFIG_CPU" value="arm.rvct.armlink.option.CONFIG_CPU.ARM7TDMI" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.CONFIG_FPU.1947166297" superClass="arm.rvct.armlink.option.CONFIG_FPU" value="arm.rvct.armlink.option.CONFIG_FPU.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.CONFIG_FPMODE.420655381" superClass="arm.rvct.armlink.option.CONFIG_FPMODE" value="arm.rvct.armlink.option.CONFIG_FPMODE.std" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.CONFIG_B_ENDIAN.1653879235" superClass="arm.rvct.armlink.option.CONFIG_B_ENDIAN" value="arm.rvct.armlink.option.CONFIG_B_ENDIAN.false" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.INFO.1285175174" superClass="arm.rvct.armlink.option.INFO" valueType="stringList">
+<listOptionValue builtIn="false" value="totals"/>
+</option>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/README.txt" name="README.txt" rcbsApplicability="disable" resourcePath="/SVC/.svn/README.txt" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/dir-wcprops" name="dir-wcprops" rcbsApplicability="disable" resourcePath="/SVC/.svn/dir-wcprops" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/empty-file" name="empty-file" rcbsApplicability="disable" resourcePath="/SVC/.svn/empty-file" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/entries" name="entries" rcbsApplicability="disable" resourcePath="/SVC/.svn/entries" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/format" name="format" rcbsApplicability="disable" resourcePath="/SVC/.svn/format" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/.cdtbuild.svn-base" name=".cdtbuild.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/.cdtbuild.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/.cdtproject.svn-base" name=".cdtproject.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/.cdtproject.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/.project.svn-base" name=".project.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/.project.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/ahandle.s.svn-base" name="ahandle.s.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/ahandle.s.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/build.bat.svn-base" name="build.bat.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/build.bat.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/build.sh.svn-base" name="build.sh.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/build.sh.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/chandle.c.svn-base" name="chandle.c.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/chandle.c.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/main.c.svn-base" name="main.c.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/main.c.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/readme.txt.svn-base" name="readme.txt.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/readme.txt.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/svc.h.svn-base" name="svc.h.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/svc.h.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/svc.mcp.svn-base" name="svc.mcp.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/svc.mcp.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/prop-base/svc.mk.svn-base" name="svc.mk.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/prop-base/svc.mk.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/.cdtbuild.svn-work" name=".cdtbuild.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/.cdtbuild.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/.cdtproject.svn-work" name=".cdtproject.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/.cdtproject.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/.project.svn-work" name=".project.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/.project.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/ahandle.s.svn-work" name="ahandle.s.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/ahandle.s.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/build.bat.svn-work" name="build.bat.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/build.bat.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/build.sh.svn-work" name="build.sh.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/build.sh.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/chandle.c.svn-work" name="chandle.c.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/chandle.c.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/main.c.svn-work" name="main.c.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/main.c.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/readme.txt.svn-work" name="readme.txt.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/readme.txt.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/svc.h.svn-work" name="svc.h.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/svc.h.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/svc.mcp.svn-work" name="svc.mcp.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/svc.mcp.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/props/svc.mk.svn-work" name="svc.mk.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/props/svc.mk.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/.cdtbuild.svn-base" name=".cdtbuild.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/.cdtbuild.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/.cdtproject.svn-base" name=".cdtproject.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/.cdtproject.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/.project.svn-base" name=".project.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/.project.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/ahandle.s.svn-base" name="ahandle.s.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/ahandle.s.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/build.bat.svn-base" name="build.bat.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/build.bat.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/build.sh.svn-base" name="build.sh.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/build.sh.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/chandle.c.svn-base" name="chandle.c.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/chandle.c.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/main.c.svn-base" name="main.c.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/main.c.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/readme.txt.svn-base" name="readme.txt.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/readme.txt.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/svc.h.svn-base" name="svc.h.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/svc.h.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/svc.mcp.svn-base" name="svc.mcp.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/svc.mcp.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/text-base/svc.mk.svn-base" name="svc.mk.svn-base" rcbsApplicability="disable" resourcePath="/SVC/.svn/text-base/svc.mk.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/.cdtbuild.svn-work" name=".cdtbuild.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/.cdtbuild.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/.cdtproject.svn-work" name=".cdtproject.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/.cdtproject.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/.project.svn-work" name=".project.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/.project.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/ahandle.s.svn-work" name="ahandle.s.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/ahandle.s.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/build.bat.svn-work" name="build.bat.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/build.bat.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/build.sh.svn-work" name="build.sh.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/build.sh.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/chandle.c.svn-work" name="chandle.c.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/chandle.c.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/main.c.svn-work" name="main.c.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/main.c.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/readme.txt.svn-work" name="readme.txt.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/readme.txt.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/svc.h.svn-work" name="svc.h.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/svc.h.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/svc.mcp.svn-work" name="svc.mcp.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/svc.mcp.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/.svn/wcprops/svc.mk.svn-work" name="svc.mk.svn-work" rcbsApplicability="disable" resourcePath="/SVC/.svn/wcprops/svc.mk.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/build.bat" name="build.bat" rcbsApplicability="disable" resourcePath="/SVC/build.bat" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/build.sh" name="build.sh" rcbsApplicability="disable" resourcePath="/SVC/build.sh" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/readme.txt" name="readme.txt" rcbsApplicability="disable" resourcePath="/SVC/readme.txt" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.debug1936146748./svc/svc.mk" name="svc.mk" rcbsApplicability="disable" resourcePath="/SVC/svc.mk" toolsToInvoke=""/>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>

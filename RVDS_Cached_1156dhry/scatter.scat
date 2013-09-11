@@ -1,0 +1,34 @@
+;;; Copyright ARM Ltd 2005-2008. All rights reserved.
+
+;; Semihosting scatter file
+;; Stack and Heap are located in the D-TCM
+;; D-TCM is located by scatter file
+
+
+ROM_LOAD 0x20000
+{
+    ROM_EXEC 0x20000
+    {
+        initTCM.o (Init1156TCM, +FIRST)  ; Core initialisation including TCM setup.
+        initMPU.o (InitMPU)              ; Initialize MPU
+        * (InRoot$$Sections)             ; We place the library sections in the root region
+        retarget.o (+RO)                 ; e.g. __main.o, __scatter*.o, * (Region$$Table)        
+    }
+    
+
+    I-TCM 0x100 0x7F00                   ; built at 0x100 to avoid vector space
+    {                                    ; assumes 32K I-TCM
+        dhry_1.o (+RO)
+        dhry_2.o (+RO)
+        * (+RO)                          ; any remaining code inc C lib.
+    }
+
+    D-TCM 0x10000 0X4000                 ; D-TCM at 0x10000
+    {                                    ; assumes 32K D-TCM
+        * (+RW,+ZI)                      ; places all image RW and ZI data at this address
+    }
+
+    ARM_LIB_STACKHEAP 0x14000 EMPTY 0x4000  ; depending on application heap
+    {                                       ; requirement, select size appropriately.
+    }     
+}

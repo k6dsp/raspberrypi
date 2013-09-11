@@ -1,0 +1,60 @@
+#! armcc -E
+;;; Copyright ARM Ltd 2002-2010. All rights reserved.
+
+;; Final embedded scatter file
+;; Stack and Heap are located in the D-TCM
+
+#include "../include/versatile.h"
+
+ROM_LOAD 0x34060000 0x03F90000
+{
+    ROM_EXEC 0x34060000 0x03F90000
+    {
+        init.o (Init, +FIRST)            ; Initialization code
+        initTCM.o                        ; Initialise TCMs
+        initMMU.o                        ; Create Translation Table
+        * (InRoot$$Sections)             ; All library sections that must be in a root region
+                                         ; e.g. __main.o, __scatter*.o, * (Region$$Table)
+    }
+
+    I-TCM 0x0000 0x8000                  
+    {                                    ; assumes 32K I-TCM
+        vectors.o (Vect, +FIRST)
+        * (+RO)                          ; any remaining code inc C lib.
+    }
+
+    ARM_LIB_STACKHEAP 0x10000 EMPTY 0x3000 ; assume 32KB data D-TCM (0x10000~0x18000)
+    {
+    }
+
+    EXCEPTION_HANDLER_STACKS 0x14000 EMPTY -0x1000 ; grows down from 0x14000 to 0x13000
+    {
+    }
+    
+    D-TCM +0                             ; RW/ZI starts after stack/heap region in DTCM
+    {                                    ; i.e., starts at 0x14000
+        * (+RW,+ZI)
+    }
+    
+    TTB 0x28000 UNINIT                   ; place translation table at 0x28000
+    {
+        TTB.o (+ZI)
+    }
+    
+
+    Timer0 TimerBase UNINIT
+    {
+        timer.o (+ZI)
+    }
+
+    IRQ0 IntBase UNINIT
+    {
+        irq.o (+ZI)
+    }
+    
+    UART0 UART0Base UNINIT
+    {
+        uart.o (+ZI)
+    }
+}
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="thumbtoarm.cdt.managedbuild.target.arm.executable.446642090" name="Executable (ARM)" projectType="cdt.managedbuild.target.arm.executable">
+<configuration artifactExtension="axf" artifactName="thumbtoarm" cleanCommand="rm -f" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm.executable.release685307944" name="thumbtoarm" parent="cdt.managedbuild.config.arm.executable.release" postbuildStep="fromelf --bin --output=thumbtoarm.bin ${BuildArtifactFileName}" prebuildStep="make -v">
+<toolChain id="cdt.managedbuild.toolchain.arm.executable.release.767994440" name="ARM Tool Chain" superClass="cdt.managedbuild.toolchain.arm.executable.release">
+<tool id="cdt.managedbuild.tool.arm.armcc.executable.release.1668661333" name="ARM RealView Compiler" superClass="cdt.managedbuild.tool.arm.armcc.executable.release">
+<option id="arm.rvct.armcc.option.CONFIG_LANG.1687824861" superClass="arm.rvct.armcc.option.CONFIG_LANG" value="arm.rvct.armcc.option.CONFIG_LANG.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_ISET.1897819228" superClass="arm.rvct.armcc.option.CONFIG_ISET" value="arm.rvct.armcc.option.CONFIG_ISET.TargetThumb" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_CPU.410931835" superClass="arm.rvct.armcc.option.CONFIG_CPU" value="arm.rvct.armcc.option.CONFIG_CPU.ARM7TDMI" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_FPU.104133844" superClass="arm.rvct.armcc.option.CONFIG_FPU" value="arm.rvct.armcc.option.CONFIG_FPU.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_FPMODE.46369406" superClass="arm.rvct.armcc.option.CONFIG_FPMODE" value="arm.rvct.armcc.option.CONFIG_FPMODE.std" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_B_ENDIAN.975566500" superClass="arm.rvct.armcc.option.CONFIG_B_ENDIAN" value="arm.rvct.armcc.option.CONFIG_B_ENDIAN.false" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.OPTLEVEL.1979703838" superClass="arm.rvct.armcc.option.OPTLEVEL" value="arm.rvct.armcc.option.OPTLEVEL.1" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.OPTTIME.740406925" superClass="arm.rvct.armcc.option.OPTTIME" value="arm.rvct.armcc.option.OPTTIME.space" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.DIAG_STYLE.1281887350" superClass="arm.rvct.armcc.option.DIAG_STYLE" value="arm.rvct.armcc.option.DIAG_STYLE.arm" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_STRICT.920126610" superClass="arm.rvct.armcc.option.CONFIG_STRICT" value="arm.rvct.armcc.option.CONFIG_STRICT.STRICT_NONE" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_APCS.2043450811" superClass="arm.rvct.armcc.option.CONFIG_APCS" valueType="stringList">
+<listOptionValue builtIn="false" value="interwork"/>
+</option>
+<option id="arm.rvct.armcc.option.SYS_INCLUDE_PATH820392000" name="System Include Paths (-J)" superClass="arm.rvct.armcc.option.SYS_INCLUDE_PATH"/>
+<option id="arm.rvct.armcc.option.INCLUDE_PATH544094832" name="User Include Paths (-I)" superClass="arm.rvct.armcc.option.INCLUDE_PATH"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armasm.executable.release.376744151" name="ARM RealView Assembler" superClass="cdt.managedbuild.tool.arm.armasm.executable.release">
+<option id="arm.rvct.armasm.option.ARM.2041621945" superClass="arm.rvct.armasm.option.ARM" value="arm.rvct.armasm.option.ARM.3" valueType="enumerated"/>
+<option id="arm.rvct.armasm.abstract.debug.option.KEEP.142566146" superClass="arm.rvct.armasm.abstract.debug.option.KEEP" value="false" valueType="boolean"/>
+<option id="arm.rvct.armasm.option.DIAG_STYLE.1078747064" superClass="arm.rvct.armasm.option.DIAG_STYLE" value="arm.rvct.armasm.option.DIAG_STYLE.arm" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_CPU.1327634221" superClass="arm.rvct.armasm.option.CONFIG_CPU" value="arm.rvct.armasm.option.CONFIG_CPU.ARM7TDMI" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_FPU.368466546" superClass="arm.rvct.armasm.option.CONFIG_FPU" value="arm.rvct.armasm.option.CONFIG_FPU.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_FPMODE.521855403" superClass="arm.rvct.armasm.option.CONFIG_FPMODE" value="arm.rvct.armasm.option.CONFIG_FPMODE.std" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_B_ENDIAN.347921147" superClass="arm.rvct.armasm.option.CONFIG_B_ENDIAN" value="arm.rvct.armasm.option.CONFIG_B_ENDIAN.false" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.REGNAMES.1487411690" superClass="arm.rvct.armasm.option.REGNAMES" value="arm.rvct.armasm.option.REGNAMES.callstd" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.INCLUDE39052617" name="Include Paths (-I)" superClass="arm.rvct.armasm.option.INCLUDE"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armlink.executable.release.503322111" name="ARM RealView Linker" superClass="cdt.managedbuild.tool.arm.armlink.executable.release">
+<option id="arm.rvct.armlink.option.DIAG_STYLE.1718276396" superClass="arm.rvct.armlink.option.DIAG_STYLE" value="arm.rvct.armlink.option.DIAG_STYLE.arm" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.CONFIG_CPU.1511273745" superClass="arm.rvct.armlink.option.CONFIG_CPU" value="arm.rvct.armlink.option.CONFIG_CPU.ARM7TDMI" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.CONFIG_FPU.939317953" superClass="arm.rvct.armlink.option.CONFIG_FPU" value="arm.rvct.armlink.option.CONFIG_FPU.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.CONFIG_FPMODE.1017374452" superClass="arm.rvct.armlink.option.CONFIG_FPMODE" value="arm.rvct.armlink.option.CONFIG_FPMODE.std" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.CONFIG_B_ENDIAN.1032768215" superClass="arm.rvct.armlink.option.CONFIG_B_ENDIAN" value="arm.rvct.armlink.option.CONFIG_B_ENDIAN.false" valueType="enumerated"/>
+<option id="arm.rvct.armlink.option.INFO.498599981" superClass="arm.rvct.armlink.option.INFO" valueType="stringList">
+<listOptionValue builtIn="false" value="veneers"/>
+<listOptionValue builtIn="false" value="totals"/>
+</option>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/README.txt" name="README.txt" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/README.txt" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/dir-wcprops" name="dir-wcprops" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/dir-wcprops" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/empty-file" name="empty-file" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/empty-file" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/entries" name="entries" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/entries" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/format" name="format" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/format" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/prop-base/.cdtbuild.svn-base" name=".cdtbuild.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/prop-base/.cdtbuild.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/prop-base/.cdtproject.svn-base" name=".cdtproject.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/prop-base/.cdtproject.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/prop-base/.project.svn-base" name=".project.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/prop-base/.project.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/prop-base/armsub.c.svn-base" name="armsub.c.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/prop-base/armsub.c.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/prop-base/thumbmain.c.svn-base" name="thumbmain.c.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/prop-base/thumbmain.c.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/prop-base/thumbtoarm.bat.svn-base" name="thumbtoarm.bat.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/prop-base/thumbtoarm.bat.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/prop-base/thumbtoarm.mcp.svn-base" name="thumbtoarm.mcp.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/prop-base/thumbtoarm.mcp.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/prop-base/thumbtoarm.mk.svn-base" name="thumbtoarm.mk.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/prop-base/thumbtoarm.mk.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/prop-base/thumbtoarm.sh.svn-base" name="thumbtoarm.sh.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/prop-base/thumbtoarm.sh.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/props/.cdtbuild.svn-work" name=".cdtbuild.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/props/.cdtbuild.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/props/.cdtproject.svn-work" name=".cdtproject.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/props/.cdtproject.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/props/.project.svn-work" name=".project.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/props/.project.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/props/armsub.c.svn-work" name="armsub.c.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/props/armsub.c.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/props/thumbmain.c.svn-work" name="thumbmain.c.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/props/thumbmain.c.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/props/thumbtoarm.bat.svn-work" name="thumbtoarm.bat.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/props/thumbtoarm.bat.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/props/thumbtoarm.mcp.svn-work" name="thumbtoarm.mcp.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/props/thumbtoarm.mcp.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/props/thumbtoarm.mk.svn-work" name="thumbtoarm.mk.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/props/thumbtoarm.mk.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/props/thumbtoarm.sh.svn-work" name="thumbtoarm.sh.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/props/thumbtoarm.sh.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/text-base/.cdtbuild.svn-base" name=".cdtbuild.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/text-base/.cdtbuild.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/text-base/.cdtproject.svn-base" name=".cdtproject.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/text-base/.cdtproject.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/text-base/.project.svn-base" name=".project.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/text-base/.project.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/text-base/armsub.c.svn-base" name="armsub.c.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/text-base/armsub.c.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/text-base/thumbmain.c.svn-base" name="thumbmain.c.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/text-base/thumbmain.c.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/text-base/thumbtoarm.bat.svn-base" name="thumbtoarm.bat.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/text-base/thumbtoarm.bat.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/text-base/thumbtoarm.mcp.svn-base" name="thumbtoarm.mcp.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/text-base/thumbtoarm.mcp.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/text-base/thumbtoarm.mk.svn-base" name="thumbtoarm.mk.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/text-base/thumbtoarm.mk.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/text-base/thumbtoarm.sh.svn-base" name="thumbtoarm.sh.svn-base" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/text-base/thumbtoarm.sh.svn-base" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/wcprops/.cdtbuild.svn-work" name=".cdtbuild.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/wcprops/.cdtbuild.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/wcprops/.cdtproject.svn-work" name=".cdtproject.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/wcprops/.cdtproject.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/wcprops/.project.svn-work" name=".project.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/wcprops/.project.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/wcprops/armsub.c.svn-work" name="armsub.c.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/wcprops/armsub.c.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/wcprops/thumbmain.c.svn-work" name="thumbmain.c.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/wcprops/thumbmain.c.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/wcprops/thumbtoarm.bat.svn-work" name="thumbtoarm.bat.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/wcprops/thumbtoarm.bat.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/wcprops/thumbtoarm.mcp.svn-work" name="thumbtoarm.mcp.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/wcprops/thumbtoarm.mcp.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/wcprops/thumbtoarm.mk.svn-work" name="thumbtoarm.mk.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/wcprops/thumbtoarm.mk.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/.svn/wcprops/thumbtoarm.sh.svn-work" name="thumbtoarm.sh.svn-work" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/.svn/wcprops/thumbtoarm.sh.svn-work" toolsToInvoke=""/>
+<resourceConfiguration exclude="false" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/armsub.c" name="armsub.c" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/armsub.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc.executable.release.1668661333./thumbtoarm/armsub.c">
+<tool id="cdt.managedbuild.tool.arm.armcc.executable.release.1668661333./thumbtoarm/armsub.c" name="ARM RealView Compiler" superClass="cdt.managedbuild.tool.arm.armcc.executable.release.1668661333">
+<option id="arm.rvct.armcc.option.CONFIG_ISET.1586256085" superClass="arm.rvct.armcc.option.CONFIG_ISET" value="arm.rvct.armcc.option.CONFIG_ISET.__DEFAULT" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.OPTLEVEL.262971533" superClass="arm.rvct.armcc.option.OPTLEVEL" value="arm.rvct.armcc.option.OPTLEVEL.1" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.INCLUDE_PATH.1697170590" superClass="arm.rvct.armcc.option.INCLUDE_PATH"/>
+<option id="arm.rvct.armcc.option.SYS_INCLUDE_PATH.1264648284" superClass="arm.rvct.armcc.option.SYS_INCLUDE_PATH"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/thumbtoarm.bat" name="thumbtoarm.bat" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/thumbtoarm.bat" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/thumbtoarm.mk" name="thumbtoarm.mk" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/thumbtoarm.mk" toolsToInvoke=""/>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.arm.executable.release685307944./thumbtoarm/thumbtoarm.sh" name="thumbtoarm.sh" rcbsApplicability="disable" resourcePath="/Interwork_thumbtoarm/thumbtoarm.sh" toolsToInvoke=""/>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

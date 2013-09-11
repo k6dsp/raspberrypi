@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject>
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.arm41.exe.debug.1124380699">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.arm41.exe.debug.1124380699" moduleId="org.eclipse.cdt.core.settings" name="buildTCM">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="Cached_1136dhry" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm41.exe.debug.1124380699" name="buildTCM" parent="cdt.managedbuild.config.arm41.exe.debug.1124380699" postbuildStep="" prebuildStep="">
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.1124380699." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.1080555578" name="ARM Compilation Tools 4.1">
+							<targetPlatform id="cdt.managedbuild.target.arm41.exe.738483913"/>
+							<builder buildPath="${workspace_loc:/Cached_1136dhry/buildTCM}" id="cdt.managedbuild.target.arm.builder41.exe.2076691961" keepEnvironmentInBuildfile="false" name="CDT Internal Builder.buildTCM"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1124380699.Init.s" name="Init.s" rcbsApplicability="disable" resourcePath="Init.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.1358318018.1697707250">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.1358318018.1697707250" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.KEEP.12467479" superClass="arm.rvct.armasm41.option.KEEP" value="false" valueType="boolean"/>
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1650329700" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM1136J-S" valueType="enumerated"/>
+							<option id="arm.rvct.armasm41.option.PREDEFINE.1878736147" superClass="arm.rvct.armasm41.option.PREDEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="&quot;TCM SETL {TRUE}&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1828317449"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1124380699.retarget.c" name="retarget.c" rcbsApplicability="disable" resourcePath="retarget.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.1940848437.1636084310">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.1940848437.1636084310" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.1018034319" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM1136J-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.691196445" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="Restricted optimization, good debug (1)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.OPTTIME.428711238" superClass="arm.rvct.armcc41.option.OPTTIME" value="Space" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.OPTLIST_CALLBACK.999050455" superClass="arm.rvct.armcc41.option.OPTLIST_CALLBACK" value="false" valueType="boolean"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.1745755155" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE"/>
+							<option id="arm.rvct.armcc41.option.DIAG_WARNINGS.1070578315" superClass="arm.rvct.armcc41.option.DIAG_WARNINGS" value="false" valueType="boolean"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1677009309"/>
+						</tool>
+					</fileInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.arm41.exe.debug.2096534181">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.arm41.exe.debug.2096534181" moduleId="org.eclipse.cdt.core.settings" name="build">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="Cached_1136dhry" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm41.exe.debug.2096534181" name="build" parent="cdt.managedbuild.config.arm41.exe.debug.2096534181" postbuildStep="" prebuildStep="">
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.2096534181." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.434366164" name="ARM Compilation Tools 4.1">
+							<targetPlatform id="cdt.managedbuild.target.arm41.exe.248372860"/>
+							<builder buildPath="${workspace_loc:/Cached_1136dhry/build}" id="cdt.managedbuild.target.arm.builder41.exe.236189409" keepEnvironmentInBuildfile="false" name="CDT Internal Builder.build"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.2096534181.retarget.c" name="retarget.c" rcbsApplicability="disable" resourcePath="retarget.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.1329158021.340115296">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.1329158021.340115296" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.1071153078" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM1136J-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1445365318" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="Restricted optimization, good debug (1)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.OPTTIME.1210127351" superClass="arm.rvct.armcc41.option.OPTTIME" value="Space" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.OPTLIST_CALLBACK.1727637063" superClass="arm.rvct.armcc41.option.OPTLIST_CALLBACK" value="false" valueType="boolean"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.148661066" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE"/>
+							<option id="arm.rvct.armcc41.option.DIAG_WARNINGS.79159700" superClass="arm.rvct.armcc41.option.DIAG_WARNINGS" value="false" valueType="boolean"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.706057326"/>
+						</tool>
+					</fileInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Cached_1136dhry.cdt.managedbuild.target.arm40.exe.97736897" name="Executable"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
+		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="makefileGenerator">
+				<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+	</storageModule>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+</cproject>

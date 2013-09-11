@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject>
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.arm41.exe.debug.633774417">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.arm41.exe.debug.633774417" moduleId="org.eclipse.cdt.core.settings" name="build">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="svc" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm41.exe.debug.633774417" name="build" parent="cdt.managedbuild.config.arm41.exe.debug.633774417" postbuildStep="" prebuildStep="">
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.683091717" name="ARM Compilation Tools 4.1">
+							<targetPlatform id="cdt.managedbuild.target.arm41.exe.1436779086"/>
+							<builder buildPath="${workspace_loc:/SVC/build}" id="cdt.managedbuild.target.arm.builder41.exe.1860848588" keepEnvironmentInBuildfile="false" name="CDT Internal Builder.build"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417.readme.txt" name="readme.txt" rcbsApplicability="disable" resourcePath="readme.txt" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417.svc.mk" name="svc.mk" rcbsApplicability="disable" resourcePath="svc.mk" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417.build.sh" name="build.sh" rcbsApplicability="disable" resourcePath="build.sh" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/README.txt" name="README.txt" rcbsApplicability="disable" resourcePath=".svn/README.txt" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/dir-wcprops" name="dir-wcprops" rcbsApplicability="disable" resourcePath=".svn/dir-wcprops" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/empty-file" name="empty-file" rcbsApplicability="disable" resourcePath=".svn/empty-file" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/.cdtbuild.svn-base" name=".cdtbuild.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/.cdtbuild.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/build.bat.svn-base" name="build.bat.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/build.bat.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/.project.svn-base" name=".project.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/.project.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/chandle.c.svn-base" name="chandle.c.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/chandle.c.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/svc.mcp.svn-base" name="svc.mcp.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/svc.mcp.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/build.sh.svn-base" name="build.sh.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/build.sh.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/.cdtproject.svn-base" name=".cdtproject.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/.cdtproject.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/svc.h.svn-base" name="svc.h.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/svc.h.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/svc.mk.svn-base" name="svc.mk.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/svc.mk.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/main.c.svn-base" name="main.c.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/main.c.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/ahandle.s.svn-base" name="ahandle.s.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/ahandle.s.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/text-base/readme.txt.svn-base" name="readme.txt.svn-base" rcbsApplicability="disable" resourcePath=".svn/text-base/readme.txt.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/build.bat.svn-work" name="build.bat.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/build.bat.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/svc.mk.svn-work" name="svc.mk.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/svc.mk.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/.cdtbuild.svn-work" name=".cdtbuild.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/.cdtbuild.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/main.c.svn-work" name="main.c.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/main.c.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/svc.mcp.svn-work" name="svc.mcp.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/svc.mcp.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/.cdtproject.svn-work" name=".cdtproject.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/.cdtproject.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/build.sh.svn-work" name="build.sh.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/build.sh.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/chandle.c.svn-work" name="chandle.c.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/chandle.c.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/readme.txt.svn-work" name="readme.txt.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/readme.txt.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/svc.h.svn-work" name="svc.h.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/svc.h.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/ahandle.s.svn-work" name="ahandle.s.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/ahandle.s.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/wcprops/.project.svn-work" name=".project.svn-work" rcbsApplicability="disable" resourcePath=".svn/wcprops/.project.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/entries" name="entries" rcbsApplicability="disable" resourcePath=".svn/entries" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/format" name="format" rcbsApplicability="disable" resourcePath=".svn/format" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/.cdtbuild.svn-base" name=".cdtbuild.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/.cdtbuild.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/build.bat.svn-base" name="build.bat.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/build.bat.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/.project.svn-base" name=".project.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/.project.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/chandle.c.svn-base" name="chandle.c.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/chandle.c.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/svc.mcp.svn-base" name="svc.mcp.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/svc.mcp.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/build.sh.svn-base" name="build.sh.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/build.sh.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/.cdtproject.svn-base" name=".cdtproject.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/.cdtproject.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/svc.h.svn-base" name="svc.h.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/svc.h.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/svc.mk.svn-base" name="svc.mk.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/svc.mk.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/main.c.svn-base" name="main.c.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/main.c.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/ahandle.s.svn-base" name="ahandle.s.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/ahandle.s.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/prop-base/readme.txt.svn-base" name="readme.txt.svn-base" rcbsApplicability="disable" resourcePath=".svn/prop-base/readme.txt.svn-base" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/build.bat.svn-work" name="build.bat.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/build.bat.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/svc.mk.svn-work" name="svc.mk.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/svc.mk.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/.cdtbuild.svn-work" name=".cdtbuild.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/.cdtbuild.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/main.c.svn-work" name="main.c.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/main.c.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/svc.mcp.svn-work" name="svc.mcp.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/svc.mcp.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/.cdtproject.svn-work" name=".cdtproject.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/.cdtproject.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/build.sh.svn-work" name="build.sh.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/build.sh.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/chandle.c.svn-work" name="chandle.c.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/chandle.c.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/readme.txt.svn-work" name="readme.txt.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/readme.txt.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/svc.h.svn-work" name="svc.h.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/svc.h.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/ahandle.s.svn-work" name="ahandle.s.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/ahandle.s.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417..svn/props/.project.svn-work" name=".project.svn-work" rcbsApplicability="disable" resourcePath=".svn/props/.project.svn-work" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.633774417.build.bat" name="build.bat" rcbsApplicability="disable" resourcePath="build.bat" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding=".svn/README.txt|.svn/dir-wcprops|.svn/empty-file|.svn/entries|.svn/format|.svn/prop-base/.cdtbuild.svn-base|.svn/prop-base/.cdtproject.svn-base|.svn/prop-base/.project.svn-base|.svn/prop-base/ahandle.s.svn-base|.svn/prop-base/build.bat.svn-base|.svn/prop-base/build.sh.svn-base|.svn/prop-base/chandle.c.svn-base|.svn/prop-base/main.c.svn-base|.svn/prop-base/readme.txt.svn-base|.svn/prop-base/svc.h.svn-base|.svn/prop-base/svc.mcp.svn-base|.svn/prop-base/svc.mk.svn-base|.svn/props/.cdtbuild.svn-work|.svn/props/.cdtproject.svn-work|.svn/props/.project.svn-work|.svn/props/ahandle.s.svn-work|.svn/props/build.bat.svn-work|.svn/props/build.sh.svn-work|.svn/props/chandle.c.svn-work|.svn/props/main.c.svn-work|.svn/props/readme.txt.svn-work|.svn/props/svc.h.svn-work|.svn/props/svc.mcp.svn-work|.svn/props/svc.mk.svn-work|.svn/text-base/.cdtbuild.svn-base|.svn/text-base/.cdtproject.svn-base|.svn/text-base/.project.svn-base|.svn/text-base/ahandle.s.svn-base|.svn/text-base/build.bat.svn-base|.svn/text-base/build.sh.svn-base|.svn/text-base/chandle.c.svn-base|.svn/text-base/main.c.svn-base|.svn/text-base/readme.txt.svn-base|.svn/text-base/svc.h.svn-base|.svn/text-base/svc.mcp.svn-base|.svn/text-base/svc.mk.svn-base|.svn/wcprops/.cdtbuild.svn-work|.svn/wcprops/.cdtproject.svn-work|.svn/wcprops/.project.svn-work|.svn/wcprops/ahandle.s.svn-work|.svn/wcprops/build.bat.svn-work|.svn/wcprops/build.sh.svn-work|.svn/wcprops/chandle.c.svn-work|.svn/wcprops/main.c.svn-work|.svn/wcprops/readme.txt.svn-work|.svn/wcprops/svc.h.svn-work|.svn/wcprops/svc.mcp.svn-work|.svn/wcprops/svc.mk.svn-work|build.bat|build.sh|readme.txt|svc.mk" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="svc.cdt.managedbuild.target.arm.executable.1171676823" name="Executable (ARM)"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+</cproject>

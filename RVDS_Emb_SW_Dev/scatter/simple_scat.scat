@@ -1,0 +1,19 @@
+;;; Copyright ARM Ltd 2002-2008. All rights reserved.
+
+;; Simple scatter file 
+;; To be used with the debugger attached
+;; Assumes RAM at address 0x0000
+
+
+RAM_LOAD 0x0000
+{
+    CODE_EXEC 0x0000
+    {
+        * (+RO)
+    }
+
+    DATA_EXEC +0
+    {
+        * (+RW,+ZI)
+    }
+}

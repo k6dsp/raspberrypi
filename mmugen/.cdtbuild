@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="mmugen.cdt.managedbuild.target.arm.executable.461934964" name="Executable (ARM)" projectType="cdt.managedbuild.target.arm.executable">
+<configuration artifactExtension="axf" artifactName="mmugen" cleanCommand="rm -f" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm.executable.debug.429009584" name="Debug" parent="cdt.managedbuild.config.arm.executable.debug" prebuildStep="make -v">
+<toolChain id="cdt.managedbuild.toolchain.arm.executable.debug.1439130320" name="ARM Tool Chain" superClass="cdt.managedbuild.toolchain.arm.executable.debug">
+<tool id="cdt.managedbuild.tool.arm.armcc.executable.debug.1746978549" name="ARM RealView Compiler" superClass="cdt.managedbuild.tool.arm.armcc.executable.debug">
+<option id="arm.rvct.armcc.option.CONFIG_CPU.546274708" superClass="arm.rvct.armcc.option.CONFIG_CPU" value="ARM7TDMI [default]" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_FPU.597657214" superClass="arm.rvct.armcc.option.CONFIG_FPU" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_B_ENDIAN.1259715696" superClass="arm.rvct.armcc.option.CONFIG_B_ENDIAN" value="Little Endian [default]" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_ISET.1769172577" superClass="arm.rvct.armcc.option.CONFIG_ISET" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_LANG.761565482" superClass="arm.rvct.armcc.option.CONFIG_LANG" value="[auto]" valueType="enumerated"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armasm.executable.debug.86100966" name="ARM RealView Assembler" superClass="cdt.managedbuild.tool.arm.armasm.executable.debug">
+<option id="arm.rvct.armasm.option.CONFIG_CPU.1564318478" superClass="arm.rvct.armasm.option.CONFIG_CPU" value="ARM7TDMI [default]" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_FPU.186483867" superClass="arm.rvct.armasm.option.CONFIG_FPU" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_B_ENDIAN.1293175890" superClass="arm.rvct.armasm.option.CONFIG_B_ENDIAN" value="Little Endian [default]" valueType="enumerated"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armlink.executable.debug.2067654324" name="ARM RealView Linker" superClass="cdt.managedbuild.tool.arm.armlink.executable.debug"/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="axf" artifactName="mmugen" cleanCommand="rm -f" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm.executable.release.1794764221" name="Release" parent="cdt.managedbuild.config.arm.executable.release" prebuildStep="make -v">
+<toolChain id="cdt.managedbuild.toolchain.arm.executable.release.1159606664" name="ARM Tool Chain" superClass="cdt.managedbuild.toolchain.arm.executable.release">
+<tool id="cdt.managedbuild.tool.arm.armcc.executable.release.8603539" name="ARM RealView Compiler" superClass="cdt.managedbuild.tool.arm.armcc.executable.release">
+<option id="arm.rvct.armcc.option.CONFIG_CPU.333767551" superClass="arm.rvct.armcc.option.CONFIG_CPU" value="ARM7TDMI [default]" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_FPU.1633984240" superClass="arm.rvct.armcc.option.CONFIG_FPU" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_B_ENDIAN.1395936414" superClass="arm.rvct.armcc.option.CONFIG_B_ENDIAN" value="Little Endian [default]" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_ISET.247307478" superClass="arm.rvct.armcc.option.CONFIG_ISET" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armcc.option.CONFIG_LANG.465318252" superClass="arm.rvct.armcc.option.CONFIG_LANG" value="[auto]" valueType="enumerated"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armasm.executable.release.2140173953" name="ARM RealView Assembler" superClass="cdt.managedbuild.tool.arm.armasm.executable.release">
+<option id="arm.rvct.armasm.option.CONFIG_CPU.1986840385" superClass="arm.rvct.armasm.option.CONFIG_CPU" value="ARM7TDMI [default]" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_FPU.141982445" superClass="arm.rvct.armasm.option.CONFIG_FPU" value="[auto]" valueType="enumerated"/>
+<option id="arm.rvct.armasm.option.CONFIG_B_ENDIAN.1551696828" superClass="arm.rvct.armasm.option.CONFIG_B_ENDIAN" value="Little Endian [default]" valueType="enumerated"/>
+</tool>
+<tool id="cdt.managedbuild.tool.arm.armlink.executable.release.1255994791" name="ARM RealView Linker" superClass="cdt.managedbuild.tool.arm.armlink.executable.release"/>
+</toolChain>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>

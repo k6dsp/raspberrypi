@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject>
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.arm41.exe.debug.1623455991">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.arm41.exe.debug.1623455991" moduleId="org.eclipse.cdt.core.settings" name="build_5">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="dhry" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm41.exe.debug.1623455991" name="build_5" parent="cdt.managedbuild.config.arm41.exe.debug.1623455991" postbuildStep="" prebuildStep="">
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.1515977412" name="ARM Compilation Tools 4.1">
+							<targetPlatform id="cdt.managedbuild.target.arm41.exe.643516763"/>
+							<builder buildPath="${workspace_loc:/Emb_SW_Dev/build_5}" id="cdt.managedbuild.target.arm.builder41.exe.2074568085" keepEnvironmentInBuildfile="false" name="CDT Internal Builder.build_5"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source" name="source" resourcePath="source">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.2017449834" name="ARM Compilation Tools 4.1" unusedChildren=""/>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/vectors.s" name="vectors.s" rcbsApplicability="disable" resourcePath="source/vectors.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.896657050.451556574">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.896657050.451556574" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1461297314" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1163327942"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/uish.s" name="uish.s" rcbsApplicability="disable" resourcePath="source/uish.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.896657050.1772699625">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.896657050.1772699625" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.235444842" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1902051444"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/init.s" name="init.s" rcbsApplicability="disable" resourcePath="source/init.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.896657050.1767496444">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.896657050.1767496444" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1802827401" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armasm41.option.PREDEFINE.429546559" superClass="arm.rvct.armasm41.option.PREDEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="&quot;ROM_RAM_REMAP SETL {TRUE}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;USE_SCATTER_SYMS SETL {TRUE}&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1138588910"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/clock_irq.c" name="clock_irq.c" rcbsApplicability="disable" resourcePath="source/clock_irq.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.624416251.212948204">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.624416251.212948204" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1931672137" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.1083226980" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.978362210" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.285564935" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="SCATTER_PERIP"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1167893079"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/serial.c" name="serial.c" rcbsApplicability="disable" resourcePath="source/serial.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.624416251.1599407704">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.624416251.1599407704" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1263978924" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.1849926015" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.1305320121" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.378596916" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="SCATTER_PERIP"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1164410904"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/clock.c" name="clock.c" rcbsApplicability="disable" resourcePath="source/clock.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.624416251.45014906">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.624416251.45014906" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1186290388" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.662484388" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.939561031" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.793677731"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/retarget.c" name="retarget.c" rcbsApplicability="disable" resourcePath="source/retarget.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.624416251.1304689463">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.624416251.1304689463" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1706631333" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.825456512" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.1839307435" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.1141662666" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="STANDALONE"/>
+								<listOptionValue builtIn="false" value="LIGHT_LED"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.855246208"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/submain.c" name="submain.c" rcbsApplicability="disable" resourcePath="source/submain.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.624416251.353519476">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.624416251.353519476" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.735748064" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.1095866678" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.1095571416" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="USE_SERIAL_PORT"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1110112351"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/926ej-s/initcache.s" name="initcache.s" rcbsApplicability="disable" resourcePath="source/926ej-s/initcache.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.896657050.1370204706">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.896657050.1370204706" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.690068125" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1544761876"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/926ej-s/inittcm.s" name="inittcm.s" rcbsApplicability="disable" resourcePath="source/926ej-s/inittcm.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.896657050.905491315">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.896657050.905491315" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.453827936" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armasm41.option.PREDEFINE.689368434" superClass="arm.rvct.armasm41.option.PREDEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="&quot;TCM SETL {TRUE}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;USE_SCATTER_SYMS SETL {TRUE}&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1916111269"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/926ej-s/initmmu.s" name="initmmu.s" rcbsApplicability="disable" resourcePath="source/926ej-s/initmmu.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.896657050.868561109">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.896657050.868561109" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1162710480" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1657952783"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/embed_uish.s" name="embed_uish.s" rcbsApplicability="disable" resourcePath="source/embed_uish.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.896657050.459516679">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.896657050.459516679" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.654050197" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armasm41.option.PREDEFINE.264080023" superClass="arm.rvct.armasm41.option.PREDEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="&quot;LOCATIONS_IN_CODE SETL {TRUE}&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.707996217"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/scattersyms/ttb.s" name="ttb.s" rcbsApplicability="disable" resourcePath="source/scattersyms/ttb.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.896657050.869645110">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.896657050.869645110" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1210019096" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1047639412"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/scattersyms/timer.c" name="timer.c" rcbsApplicability="disable" resourcePath="source/scattersyms/timer.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.624416251.43899804">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.624416251.43899804" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1663480483" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.455152401" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.577892639" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1903903250"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/scattersyms/dtcm.s" name="dtcm.s" rcbsApplicability="disable" resourcePath="source/scattersyms/dtcm.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.896657050.816053456">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.896657050.816053456" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1551571281" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1615775418"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/scattersyms/irq.c" name="irq.c" rcbsApplicability="disable" resourcePath="source/scattersyms/irq.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.624416251.111093957">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.624416251.111093957" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1958092222" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.1993291112" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.1642160299" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1180441586"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1623455991.source/scattersyms/uart.c" name="uart.c" rcbsApplicability="disable" resourcePath="source/scattersyms/uart.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.624416251.590002239">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.624416251.590002239" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1566539306" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.914266298" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.1846986419" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.505961044"/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry excluding="source/embed_uish.s|source/scattersyms/rtc.c|source/uish.s|source/clock.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.arm41.exe.debug.894733223">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.arm41.exe.debug.894733223" moduleId="org.eclipse.cdt.core.settings" name="build_4">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="dhry" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm41.exe.debug.894733223" name="build_4" parent="cdt.managedbuild.config.arm41.exe.debug.894733223" postbuildStep="" prebuildStep="">
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.293410509" name="ARM Compilation Tools 4.1">
+							<targetPlatform id="cdt.managedbuild.target.arm41.exe.687362757"/>
+							<builder buildPath="${workspace_loc:/Emb_SW_Dev/build_4}" id="cdt.managedbuild.target.arm.builder41.exe.573517756" keepEnvironmentInBuildfile="false" name="CDT Internal Builder.build_4"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source" name="source" resourcePath="source">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.457523407" name="ARM Compilation Tools 4.1" unusedChildren=""/>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/uish.s" name="uish.s" rcbsApplicability="disable" resourcePath="source/uish.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.882911663.1692534447">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.882911663.1692534447" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1901537900" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1358171727"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/vectors.s" name="vectors.s" rcbsApplicability="disable" resourcePath="source/vectors.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.882911663.1963572903">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.882911663.1963572903" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1677269294" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.610766436"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/init.s" name="init.s" rcbsApplicability="disable" resourcePath="source/init.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.882911663.526866244">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.882911663.526866244" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.569000832" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armasm41.option.PREDEFINE.1657427023" superClass="arm.rvct.armasm41.option.PREDEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="&quot;ROM_RAM_REMAP SETL {TRUE}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;LOCATIONS_IN_CODE SETL {TRUE}&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.336290901"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/serial.c" name="serial.c" rcbsApplicability="disable" resourcePath="source/serial.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.66745989.1930889486">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.66745989.1930889486" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1042169307" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.1376699381" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.465380658" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.163854444"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/clock_irq.c" name="clock_irq.c" rcbsApplicability="disable" resourcePath="source/clock_irq.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.66745989.1890920832">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.66745989.1890920832" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.13308841" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.563892390" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.1437457256" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.746656458"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/clock.c" name="clock.c" rcbsApplicability="disable" resourcePath="source/clock.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.66745989.1501701106">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.66745989.1501701106" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.86140897" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.1831607789" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.1936183412" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.708459134"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/submain.c" name="submain.c" rcbsApplicability="disable" resourcePath="source/submain.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.66745989.602733741">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.66745989.602733741" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1796348485" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.303991017" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.1483661851" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="USE_SERIAL_PORT"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.292038910"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/retarget.c" name="retarget.c" rcbsApplicability="disable" resourcePath="source/retarget.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.66745989.1708533698">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.66745989.1708533698" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1031967924" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.44364619" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.2012827633" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.1236311921" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="STANDALONE"/>
+								<listOptionValue builtIn="false" value="LIGHT_LED"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1936670974"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/926ej-s/initcache.s" name="initcache.s" rcbsApplicability="disable" resourcePath="source/926ej-s/initcache.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.882911663.356830500">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.882911663.356830500" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.947959063" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1678787523"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/926ej-s/inittcm.s" name="inittcm.s" rcbsApplicability="disable" resourcePath="source/926ej-s/inittcm.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.882911663.1343453375">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.882911663.1343453375" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1526106526" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armasm41.option.PREDEFINE.2015798674" superClass="arm.rvct.armasm41.option.PREDEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="&quot;TCM SETL {TRUE}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;LOCATIONS_IN_CODE SETL {TRUE}&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.2089712264"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/926ej-s/initmmu.s" name="initmmu.s" rcbsApplicability="disable" resourcePath="source/926ej-s/initmmu.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.882911663.449384424">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.882911663.449384424" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.236317009" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armasm41.option.PREDEFINE.1541883370" superClass="arm.rvct.armasm41.option.PREDEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="&quot;LOCATIONS_IN_CODE SETL {TRUE}&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.261321381"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.894733223.source/embed_uish.s" name="embed_uish.s" rcbsApplicability="disable" resourcePath="source/embed_uish.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.882911663.1170077684">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.882911663.1170077684" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1475202925" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armasm41.option.PREDEFINE.81920307" superClass="arm.rvct.armasm41.option.PREDEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="&quot;LOCATIONS_IN_CODE SETL {TRUE}&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.2036279789"/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry excluding="source/uish.s|source/clock.c|source/scattersyms" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.arm41.exe.debug.1421495961">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.arm41.exe.debug.1421495961" moduleId="org.eclipse.cdt.core.settings" name="build_3">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="dhry" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm41.exe.debug.1421495961" name="build_3" parent="cdt.managedbuild.config.arm41.exe.debug.1421495961" postbuildStep="" prebuildStep="">
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.1421495961." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.467032464" name="ARM Compilation Tools 4.1">
+							<targetPlatform id="cdt.managedbuild.target.arm41.exe.1751256899"/>
+							<builder buildPath="${workspace_loc:/Emb_SW_Dev/build_3}" id="cdt.managedbuild.target.arm.builder41.exe.1029487494" keepEnvironmentInBuildfile="false" name="CDT Internal Builder.build_3"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.1421495961.source" name="source" resourcePath="source">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.289974530" name="ARM Compilation Tools 4.1" unusedChildren=""/>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1421495961.source/uish.s" name="uish.s" rcbsApplicability="disable" resourcePath="source/uish.s" toolsToInvoke="cdt.managedbuild.tool.arm.armasm41.exe.68635645.974360429">
+						<tool id="cdt.managedbuild.tool.arm.armasm41.exe.68635645.974360429" name="ARM Assembler 4.1">
+							<option id="arm.rvct.armasm41.option.CONFIG_CPU.1329323222" superClass="arm.rvct.armasm41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armasm.input.1943437926"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1421495961.source/serial.c" name="serial.c" rcbsApplicability="disable" resourcePath="source/serial.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.615823221.623793413">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.615823221.623793413" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.872402327" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.147722776" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.813868219" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1701040368"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1421495961.source/clock.c" name="clock.c" rcbsApplicability="disable" resourcePath="source/clock.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.615823221.2095013657">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.615823221.2095013657" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1928542133" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.33601760" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.698815933" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1479482773"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1421495961.source/retarget.c" name="retarget.c" rcbsApplicability="disable" resourcePath="source/retarget.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.615823221.541688336">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.615823221.541688336" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.793508139" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.682192473" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.1069899773" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.691981898" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="STANDALONE"/>
+								<listOptionValue builtIn="false" value="LIGHT_LED"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1326876770"/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry excluding="source/vectors.s|source/init.s|source/926ej-s|source/scattersyms|source/submain.c|source/embed_uish.s|source/clock_irq.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.arm41.exe.debug.1955186729">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.arm41.exe.debug.1955186729" moduleId="org.eclipse.cdt.core.settings" name="build_2">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="dhry" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm41.exe.debug.1955186729" name="build_2" parent="cdt.managedbuild.config.arm41.exe.debug.1955186729" postbuildStep="" prebuildStep="">
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.1955186729." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.2063053375" name="ARM Compilation Tools 4.1">
+							<targetPlatform id="cdt.managedbuild.target.arm41.exe.154656312"/>
+							<builder buildPath="${workspace_loc:/Emb_SW_Dev/build_2}" id="cdt.managedbuild.target.arm.builder41.exe.2127386398" keepEnvironmentInBuildfile="false" name="CDT Internal Builder.build_2"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.1955186729.source" name="source" resourcePath="source">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.983531200" name="ARM Compilation Tools 4.1" unusedChildren=""/>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1955186729.source/serial.c" name="serial.c" rcbsApplicability="disable" resourcePath="source/serial.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.936978018.819474112">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.936978018.819474112" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.442217875" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.115802427" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.1906239869" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1823200808"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1955186729.source/clock.c" name="clock.c" rcbsApplicability="disable" resourcePath="source/clock.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.936978018.527118379">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.936978018.527118379" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.575040569" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.2042118286" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.1531259861" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.1715714300"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.arm41.exe.debug.1955186729.source/retarget.c" name="retarget.c" rcbsApplicability="disable" resourcePath="source/retarget.c" toolsToInvoke="cdt.managedbuild.tool.arm.armcc41.exe.936978018.1440765995">
+						<tool id="cdt.managedbuild.tool.arm.armcc41.exe.936978018.1440765995" name="ARM Compiler 4.1">
+							<option id="arm.rvct.armcc41.option.override.OPTLEVEL.1415621296" superClass="arm.rvct.armcc41.option.override.OPTLEVEL" value="High optimization, restricted debug (2)" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.CONFIG_CPU.2021575808" superClass="arm.rvct.armcc41.option.CONFIG_CPU" value="ARM926EJ-S" valueType="enumerated"/>
+							<option id="arm.rvct.armcc41.option.INCLUDE_PATH.50486" superClass="arm.rvct.armcc41.option.INCLUDE_PATH" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+							</option>
+							<option id="arm.rvct.armcc41.option.CONFIG_DEFINE.1487041521" superClass="arm.rvct.armcc41.option.CONFIG_DEFINE" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="USE_TARGET_CLOCK"/>
+								<listOptionValue builtIn="false" value="USE_SERIAL_PORT"/>
+								<listOptionValue builtIn="false" value="LIGHT_LED"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.abstract.head.arm.armcc.input.127574545"/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry excluding="source/vectors.s|source/uish.s|source/init.s|source/926ej-s|source/scattersyms|source/submain.c|source/embed_uish.s|source/clock_irq.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.arm41.exe.debug.1292855964">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.arm41.exe.debug.1292855964" moduleId="org.eclipse.cdt.core.settings" name="build_1">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="dhry" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.arm.eclipse.cdt.managedbuilder.RealViewCoreToolsErrorParser" id="cdt.managedbuild.config.arm41.exe.debug.1292855964" name="build_1" parent="cdt.managedbuild.config.arm41.exe.debug.1292855964" postbuildStep="" prebuildStep="">
+					<folderInfo id="cdt.managedbuild.config.arm41.exe.debug.1292855964." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.arm41.exe.debug.1905117543" name="ARM Compilation Tools 4.1">
+							<targetPlatform id="cdt.managedbuild.target.arm41.exe.1613254003"/>
+							<builder buildPath="${workspace_loc:/Emb_SW_Dev/build_1}" id="cdt.managedbuild.target.arm.builder41.exe.965958833" keepEnvironmentInBuildfile="false" name="CDT Internal Builder.build_1"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="source" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Emb_SW_Dev.cdt.managedbuild.target.arm40.exe.133182940" name="Executable"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
+		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="makefileGenerator">
+				<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+	</storageModule>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+</cproject>
