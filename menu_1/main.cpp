@@ -1,8 +1,4 @@
-
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
-
-//extern void *(volatile int32_t *) ( unsigned int, unsigned int );
+#include "menuMgr.h"
 #include "stdint.h"
 extern "C" void dummy ( unsigned int );
 
@@ -11,8 +7,6 @@ extern "C" void dummy ( unsigned int );
 #define GPCLR0  0x20200028
 #define GPPUD       0x20200094
 #define GPPUDCLK0   0x20200098
-
-
 
 #define UART0_BASE   0x20201000
 #define UART0_DR     (UART0_BASE+0x00)
@@ -34,49 +28,35 @@ extern "C" void dummy ( unsigned int );
 #define UART0_ITOP   (UART0_BASE+0x88)
 #define UART0_TDR    (UART0_BASE+0x8C)
 
-
-
-
-
-
-
-
-//GPIO14  TXD0 and TXD1
-//GPIO15  RXD0 and RXD1
-//alt function 5 for uart1
-//alt function 0 for uart0
-
-//(3000000 / (16 * 115200) = 1.627
-//(0.627*64)+0.5 = 40
-//int 1 frac 40
-
 //------------------------------------------------------------------------
-void uart_putl (  char * ptr,  int len )
-{
-
-    for (int i = 0; i < len; i++)
-    {
-        while(((*(volatile int *)(UART0_FR)) & 0x20));
-        *(volatile int *)UART0_DR = *ptr++;
-    }
-
-}
-//------------------------------------------------------------------------
-unsigned int uart_getc ( void )
-{
-    while(1)
-    {
-        if(((*(volatile int32_t *)(UART0_FR)) & 0x10) == 0 ) break;
-    }
-    return(*(volatile int32_t *)(UART0_DR));
-}
+//void putc ( int c, FILE * x )
+//{
+//
+//    while(((*(volatile int *)(UART0_FR)) & 0x20));
+//    *(volatile int *)UART0_DR = c;
+//}
+////------------------------------------------------------------------------
+//unsigned int getc ( FILE * x )
+//{
+//    while(1)
+//    {
+//        if(((*(volatile int32_t *)(UART0_FR)) & 0x10) == 0 ) break;
+//    }
+//    return(*(volatile int32_t *)(UART0_DR));
+//}
 //------------------------------------------------------------------------
 void uart_init ( void )
 {
     unsigned int ra;
 
-    *(volatile int32_t *)(UART0_CR) = 0;
 
+    ra=*(volatile int32_t *)(GPFSEL1);
+    ra&=~(7<<18);
+    ra|=1<<18;
+    *(volatile int32_t *)(GPFSEL1) = ra;
+
+
+    *(volatile int32_t *)(UART0_CR) = 0;
     ra=*(volatile int32_t *)(GPFSEL1);
     ra&=~(7<<12); //gpio14
     ra|=4<<12;    //alt0
@@ -99,68 +79,6 @@ void uart_init ( void )
 
     *(volatile int32_t *)(UART0_CR) = 0x301;
 }
-//------------------------------------------------------------------------
-//void hexstrings ( unsigned int d )
-//{
-//    //unsigned int ra;
-//    unsigned int rb;
-//    unsigned int rc;
-//
-//    rb=32;
-//    while(1)
-//    {
-//        rb-=4;
-//        rc=(d>>rb)&0xF;
-//        if(rc>9) rc+=0x37; else rc+=0x30;
-//        uart_putc(rc);
-//        if(rb==0) break;
-//    }
-//    uart_putc(0x20);
-//}
-////------------------------------------------------------------------------
-//void hexstring ( unsigned int d )
-//{
-//    hexstrings(d);
-//    uart_putc(0x0D);
-//    uart_putc(0x0A);
-//}
-//------------------------------------------------------------------------
-//int main ( int earlypc, char **argv )
-//{
-//    unsigned int ra;
-//
-//    uart_init();
-//    hexstring(0x12345678);
-//    hexstring(earlypc);
-//
-//    for(ra=0;ra<30000;ra++)
-//    {
-//        uart_putc(0x30|(ra&7));
-//    }
-//
-//    for(ra=0;ra<100;ra++) uart_putc(0x55);
-//
-//    //probably a better way to flush the rx fifo.  depending on if and
-//    //which bootloader you used you might have some stuff show up in the
-//    //rx fifo.
-//    while(1)
-//    {
-//        if((*(volatile int32_t *)(UART0_FR)) & 0x10) break;
-//        *(volatile int32_t *)(UART0_DR);
-//    }
-//
-//    while(1)
-//    {
-//        ra=uart_getc();
-//        if(ra==0x0D) uart_putc(0x0A);
-//        uart_putc(ra);
-//    }
-//return(0);
-//}
-
-#include "menuMgr.h"
-
-
 
 
 int main()
@@ -168,18 +86,29 @@ int main()
 	uart_init();
 
 	PrintCmd 	printCmd;
+	LedOnCmd	ledOnCmd;
+	LedOffCmd	ledOffCmd;
 	ReturnCmd 	returnCmd;
-	print_uart("this is a test\r\n");
+
   //Setup main menu first. Add submenu's here later.
     MenuMgr mainMenu("Main Menu");
 
-  //Setup a single sub menu.
+  //Setup  sub menu.
     MenuMgr fileMenu("File Menu");
+    MenuMgr ledMenu("LED Menu");
+
   //Add concrete menu's to the sub menu.
     fileMenu.add(printCmd);
     fileMenu.add(returnCmd);
+
+//Add concrete menu's to the sub menu.
+	ledMenu.add(ledOnCmd);
+	ledMenu.add(ledOffCmd);
+	ledMenu.add(returnCmd);
+
   //And add the sub menu to the main menu.
     mainMenu.add(fileMenu);
+    mainMenu.add(ledMenu);
 
   //Run the menu.
     mainMenu.execute();

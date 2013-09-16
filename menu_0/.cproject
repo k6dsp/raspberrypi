@@ -63,7 +63,6 @@
 							<tool id="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.printsize.debug.253395064" name="ARM Yagarto Windows GNU Print Size" superClass="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.printsize.debug"/>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.debug.1424977083.1101365393" name="NOTUSED_memmap" rcbsApplicability="disable" resourcePath="NOTUSED_memmap" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="uartx01.cpp|NOTUSED_memmap" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
@@ -125,7 +124,6 @@
 							<tool id="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.printsize.release.1041037511" name="ARM Yagarto Windows GNU Print Size" superClass="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.printsize.release"/>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="org.eclipse.cdt.cross.arm.gnu.yagarto.windows.elf.release.814834727.122300716" name="NOTUSED_memmap" rcbsApplicability="disable" resourcePath="NOTUSED_memmap" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="uartx01.cpp|NOTUSED_memmap" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>

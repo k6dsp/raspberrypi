@@ -98,11 +98,13 @@ SECTIONS
   . = ALIGN(32 / 8);
   __end__ = . ;
   _end = .; PROVIDE (end = .);
-   .cr_heap   :
+   .cr_heap  0x20000 :
 	{
 		PROVIDE(__heap_start__ = .);
+		PROVIDE(heap_low = .);
 		. += 0x10000;
 		PROVIDE(__heap_end__ = .);
+		PROVIDE(heap_top = .);
 	}
 	
   .stack   0x80000 :
