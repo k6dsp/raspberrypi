@@ -181,7 +181,7 @@ if(1)
 
         PUT32(GPSET0,1<<16); //led off
         interval+=0x10000;
-        if(interval==0) interval=0x00080000;
+        if(interval==0) interval=0x00100000;
     }
 
 

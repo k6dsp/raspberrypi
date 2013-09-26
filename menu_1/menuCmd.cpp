@@ -15,7 +15,7 @@
 
 bool PrintCmd::execute()
 {
-  printf("I am printing stuff :\r\n");
+  iprintf("\r\nI am printing something!\r\n");
   return true;
 }
 

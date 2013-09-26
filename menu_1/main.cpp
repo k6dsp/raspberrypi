@@ -1,6 +1,7 @@
 #include "menuMgr.h"
 #include "stdint.h"
 extern "C" void dummy ( unsigned int );
+extern "C" void _init(void) {}
 
 #define GPFSEL1 0x20200004
 #define GPSET0  0x2020001C
@@ -28,23 +29,7 @@ extern "C" void dummy ( unsigned int );
 #define UART0_ITOP   (UART0_BASE+0x88)
 #define UART0_TDR    (UART0_BASE+0x8C)
 
-//------------------------------------------------------------------------
-//void putc ( int c, FILE * x )
-//{
-//
-//    while(((*(volatile int *)(UART0_FR)) & 0x20));
-//    *(volatile int *)UART0_DR = c;
-//}
-////------------------------------------------------------------------------
-//unsigned int getc ( FILE * x )
-//{
-//    while(1)
-//    {
-//        if(((*(volatile int32_t *)(UART0_FR)) & 0x10) == 0 ) break;
-//    }
-//    return(*(volatile int32_t *)(UART0_DR));
-//}
-//------------------------------------------------------------------------
+
 void uart_init ( void )
 {
     unsigned int ra;
@@ -80,22 +65,22 @@ void uart_init ( void )
     *(volatile int32_t *)(UART0_CR) = 0x301;
 }
 
+PrintCmd 	printCmd;
+LedOnCmd	ledOnCmd;
+LedOffCmd	ledOffCmd;
+ReturnCmd 	returnCmd;
+
+//Setup main menu first. Add submenu's here later.
+MenuMgr mainMenu("Main Menu");
+
+//Setup  sub menu.
+MenuMgr fileMenu("File Menu");
+MenuMgr ledMenu("LED Menu");
+
 
 int main()
 {
 	uart_init();
-
-	PrintCmd 	printCmd;
-	LedOnCmd	ledOnCmd;
-	LedOffCmd	ledOffCmd;
-	ReturnCmd 	returnCmd;
-
-  //Setup main menu first. Add submenu's here later.
-    MenuMgr mainMenu("Main Menu");
-
-  //Setup  sub menu.
-    MenuMgr fileMenu("File Menu");
-    MenuMgr ledMenu("LED Menu");
 
   //Add concrete menu's to the sub menu.
     fileMenu.add(printCmd);

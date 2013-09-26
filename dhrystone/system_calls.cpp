@@ -1,5 +1,18 @@
 #include <errno.h>
 #include <sys/file.h>
+
+#include <_ansi.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/fcntl.h>
+#include <stdio.h>
+#include <time.h>
+#include <sys/time.h>
+#include <sys/times.h>
+#include <errno.h>
+#include <reent.h>
+
+
 #undef errno
 extern int errno;
 #define UART0_BASE   0x20201000
@@ -24,9 +37,72 @@ extern int errno;
 
 
 
-extern "C" {
+#define ARMBASE 0x8000
+#define CS 0x20003000
+#define CLO 0x20003004
+#define C0 0x2000300C
+#define C1 0x20003010
+#define C2 0x20003014
+#define C3 0x20003018
+
+#define GPFSEL1 0x20200004
+#define GPSET0  0x2020001C
+#define GPCLR0  0x20200028
+
+
+
+extern "C" void enable_irq ( void );
+
+
+extern "C"
+{
+
+//------------------------------------------------------------------------
+volatile unsigned int irq_counter;
+//-------------------------------------------------------------------------
+void c_irq_handler ( void )
+{
+    irq_counter++;
+    *(volatile unsigned int *)0x20003010 = (unsigned int)(*(volatile unsigned int *)0x20003004) + 0x2710; //10 msec
+    *(volatile unsigned int *)(0x20003000) = 2;
+}
+
+
+
+
+
 
   int _write(int, char *, int);
+
+
+#define SYSTIMERCLO 0x20003004
+  /* Return a clock that ticks at 100Hz.  */
+  clock_t  _clock (void)
+  {
+//    clock_t timeval;
+//
+//    timeval = *(clock_t *)(SYSTIMERCLO) >> 3;
+//    return timeval;
+	  return irq_counter;
+  }
+
+  /* Return a clock that ticks at 100Hz.  */
+  clock_t  _times (struct tms * tp)
+  {
+    clock_t timeval = _clock();
+
+    if (tp)
+      {
+        tp->tms_utime  = timeval;     /* user time */
+        tp->tms_stime  = 0;     /* system time */
+        tp->tms_cutime = 0;     /* user time, children */
+        tp->tms_cstime = 0;     /* system time, children */
+      }
+
+    return timeval;
+  };
+
+
 
   /**
    * @brief Opens a file
@@ -159,5 +235,4 @@ caddr_t _sbrk(int incr)
     }
     return len;
   }
-
-} // extern "C"
+}

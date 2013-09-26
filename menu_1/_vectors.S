@@ -1,65 +1,90 @@
 
+.text
 .globl _start
 .func _start
 .extern _vStackTop
+.extern _init
 .extern main
 
 _start:
-    ldr sp, =_vStackTop
+    ldr sp, =__stack_end__
+
+	ldr	r1,=__bss_start__
+	ldr r2,=__bss_end__
+	mov	r3, #0
+	/* clear .bss */
+clear_bss:
+	cmp	r1,r2
+	strlo r3, [r1], #4
+	blo clear_bss
+
+	ldr	r1,=__stack_start__
+	ldr	r2,=__stack_end__
+	ldr	r3, StackFillValue
+fill_stack:
+	cmp	r1,r2
+	strlo r3, [r1], #4
+	blo fill_stack
+
+	ldr r12, =__libc_init_array
+	mov lr, pc
+	bx r12
 
 
-    bl main
-hang: b hang
+/*
+   Call C++ constructors (for objects in "global scope")
+   ctor loop added by Martin Thomas 4/2005
+   based on a Anglia Design example-application for ST ARM
+*/
+
+		LDR 	r0, =__ctors_start__
+		LDR 	r1, =__ctors_end__
+ctor_loop:
+		CMP 	r0, r1
+		BEQ 	ctor_end
+
+//		LDR 	r2, [r0], #4
+//		STMFD 	sp!, {r0-r1}
+//		MOV 	lr, pc
+//		MOV 	pc, r2
+//		LDMFD 	sp!, {r0-r1}
+//		B 		ctor_loop
+
+4:
+		ldmdb	r1!, {r2}
+		blx		r2
+		cmp		r0, r1
+		blo		4b
+
+ctor_end:
+
+
+
+
+
+// Call main program: main(0)
+// --------------------------
+        mov   r0,#0                     // no arguments (argc = 0)
+        mov   r1,r0
+        mov   r2,r0
+        mov   fp,r0                     // null frame pointer
+        mov   r7,r0                     // null frame pointer for thumb
+        ldr   r10,=main
+        mov   lr,pc
+        bx    r10                       // enter main()
+hang: 	b 	  hang
+/* "global object"-dtors are never called and it should not be
+   needed since there is no OS to exit to. */
+
+.size   _start, . - _start
 .endfunc
 
 
-.globl PUT32
-PUT32:
-    str r1,[r0]
-    bx lr
-
-.globl GET32
-GET32:
-    ldr r0,[r0]
-    bx lr
-
+StackFillValue: .word 0xDEADC0DE
 .globl dummy
 dummy:
     bx lr
 
-
-
-.global core_init
-core_init:
-
-//==================================================================
-// Enable caches
-// Caches are controlled by the System Control Register:
-//==================================================================
-        mrc     p15, 0, r0, c1, c0, 0      // Read CP15 register 1
-        orr     r0, r0, #(0x1<<12)         // Enable I Cache
-        orr     r0, r0, #(0x1<<2)          // Enable D Cache
-        mcr     p15, 0, r0, c1, c0, 0      // Write CP15 register 1
-
-//==================================================================
-// Enable Program Flow Prediction
-//
-// Branch prediction is controlled by the Auxiliary Control Register:
-// Set Bit 0 to enable return stack (Set on reset)
-// Set Bit 1 to enable dynamic branch prediction (Set on reset)
-// Set Bit 2 to enable static branch prediction (Set on reset)
-//==================================================================
-
-        mrc     p15, 0, r0, c1, c0, 1      // Read Auxiliary Control Register
-        mov     r1, #0x7
-        orr     r0 ,r0, r1
-        mcr     p15, 0, r0, c1, c0, 1      // Write Auxiliary Control Register
-
-        mrc     p15 ,0, r0, c1, c0, 0      // Read Control Register configuration data
-        orr     r0, r0, #(0x1 << 11)       // Enable Program flow prediction
-        mcr     p15, 0, r0, c1, c0, 0      // Write Control Register configuration data
-
-        bx     lr
 
 ;@-------------------------------------------------------------------------
 ;@
