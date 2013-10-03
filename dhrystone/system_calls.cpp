@@ -50,7 +50,6 @@ extern int errno;
 #define GPCLR0  0x20200028
 
 
-
 extern "C" void enable_irq ( void );
 
 
@@ -65,14 +64,20 @@ void c_irq_handler ( void )
     irq_counter++;
     *(volatile unsigned int *)0x20003010 = (unsigned int)(*(volatile unsigned int *)0x20003004) + 0x2710; //10 msec
     *(volatile unsigned int *)(0x20003000) = 2;
+    if (irq_counter & 0x1)
+    {
+    	*(volatile unsigned int *)0x2020001C = 1<<16;
+    }
+    else
+    {
+
+    	*(volatile unsigned int *)0x20200028 = 1<<16;
+    }
 }
 
 
 
-
-
-
-  int _write(int, char *, int);
+int _write(int, char *, int);
 
 
 #define SYSTIMERCLO 0x20003004
@@ -90,6 +95,7 @@ void c_irq_handler ( void )
   clock_t  _times (struct tms * tp)
   {
     clock_t timeval = _clock();
+    struct timespec tp1;
 
     if (tp)
       {

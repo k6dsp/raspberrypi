@@ -357,6 +357,8 @@
 #undef HZ
 #undef TIMES
 #include <time.h>
+// raspberry pi timer is configured to have 10 msec tick
+// this is exactly CLK_TCK is configured for !!!
 #define HZ     CLK_TCK
 #endif
                /* Use Microsoft C hi-res clock */

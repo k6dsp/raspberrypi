@@ -44,9 +44,6 @@ int             Arr_2_Glob [50] [50];
 #ifdef TIMES
 struct tms      time_info;
 
-//extern  int     times ();
-                /* see library function "times" */
-#define HZ 100
 #define Too_Small_Time (2*HZ)
                 /* Measurements should last at least about 2 seconds */
 #endif
@@ -61,11 +58,12 @@ extern clock_t clock();
 #define Too_Small_Time (2*HZ)
 #endif
 
-long            Begin_Time,
+int             Begin_Time,
                 End_Time,
                 User_Time;
-float           Microseconds,
-                Dhrystones_Per_Second;
+double           Microseconds,
+                Dhrystones_Per_Second,
+                Vax_Mips;
 
 /* end of variables for time measurement */
 void _init() {};
@@ -170,15 +168,12 @@ void Proc_5 () /* without parameters */
 
         /* Procedure for the assignment of structures,          */
         /* if the C compiler doesn't support this feature       */
-#ifdef  NOSTRUCTASSIGN
-memcpy (d, s, l)
-register char   *d;
-register char   *s;
-register int    l;
-{
-        while (l--) *d++ = *s++;
-}
-#endif
+//#ifdef  NOSTRUCTASSIGN
+//void memcpy (register char   *d, register char   *s, register int  l)
+//{
+//        while (l--) *d++ = *s++;
+//}
+//#endif
 
 int main ()
 /*****/
@@ -195,6 +190,7 @@ int main ()
         Str_30          Str_2_Loc;
   REG   int             Run_Index;
   REG   int             Number_Of_Runs;
+  	    int 	ra;
 
 
 
@@ -202,15 +198,23 @@ int main ()
   /* Start timer */
   /***************/
 
-  *(unsigned int *)0x20003010 = *(unsigned int *)0x20003004 + 0x3D0;//1 msec
+  *(unsigned int *)0x20003010 = *(unsigned int *)0x20003004 + 0x3D09;//1 msec
   *(unsigned int *)0x20003000 = 2;
   *(unsigned int *)0x2000B210 = 0x00000002;
-   enable_irq();
+
 
 
    core_init();
 
 
+   ra = *(volatile unsigned int *)0x20200004;
+   ra &= ~(7<<18);
+   ra |= 1<<18;
+   *(volatile unsigned int *)0x20200004 = ra;
+
+	*(volatile unsigned int *)0x20200028 = 1<<16;
+
+   enable_irq();
   /* Initializations */
 
   Next_Ptr_Glob = (Rec_Pointer) malloc (sizeof (Rec_Type));
@@ -261,11 +265,6 @@ int main ()
   *(unsigned int *)0x20003000 = 2;
   *(unsigned int *)0x2000B210 = 0x00000002;
    enable_irq();
-
-
-
-
-
 
 #ifdef TIMES
   times (&time_info);
@@ -399,7 +398,6 @@ int main ()
   printf ("        should be:   DHRYSTONE PROGRAM, 2'ND STRING\n\r");
   printf ("\n\r");
 
-  User_Time = End_Time - Begin_Time;
 
   if (User_Time < Too_Small_Time)
   {
@@ -410,20 +408,25 @@ int main ()
   else
   {
 #ifdef TIME
-    Microseconds = (float) User_Time * Mic_secs_Per_Second 
-                        / (float) Number_Of_Runs;
-    Dhrystones_Per_Second = (float) Number_Of_Runs / (float) User_Time;
+    Microseconds = (double) User_Time * Mic_secs_Per_Second
+                        / (double) Number_Of_Runs;
+    Dhrystones_Per_Second = (double) Number_Of_Runs / (double) User_Time;
+    Vax_Mips = Dhrystones_Per_Second / 1757.0;
 #else
-    Microseconds = (float) User_Time * Mic_secs_Per_Second 
-                        / ((float) HZ * ((float) Number_Of_Runs));
-    Dhrystones_Per_Second = ((float) HZ * (float) Number_Of_Runs)
-                        / (float) User_Time;
+    Microseconds = (double) User_Time * Mic_secs_Per_Second
+                        / ((double) HZ * ((double) Number_Of_Runs));
+    Dhrystones_Per_Second = ((double) HZ * (double) Number_Of_Runs)
+                        / (double) User_Time;
+    Vax_Mips = Dhrystones_Per_Second / 1757.0;
 #endif
     printf ("Microseconds for one run through Dhrystone: ");
-    printf ("%6.1f \n\r", Microseconds);
+    printf ("%12.2f \n\r", Microseconds);
     printf ("Dhrystones per Second:                      ");
-    printf ("%6.1f \n\r", Dhrystones_Per_Second);
+    printf ("%12.2f \n\r", Dhrystones_Per_Second);
+    printf ("VAX  MIPS rating:                           ");
+    printf ("%12.2f \n\r", Vax_Mips);
+    
     printf ("\n\r");
   }
-  
+  return 0;
 }
